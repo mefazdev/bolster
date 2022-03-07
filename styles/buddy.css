@@ -1,0 +1,71 @@
+
+.buddy{
+
+    padding-top: 70px;
+    background: transparent linear-gradient(369deg, rgba(182, 184, 68, 0.404) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+}
+.buddy__main{
+    background: url('../assets/images/buddy.JPG');
+    height:400px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.buddy__main h1{
+    font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+color: #fff;
+}
+.buddy__main__head{
+    position: absolute; bottom: 20px; 
+  background-color: rgba(0, 0, 0, 0.801);
+    margin-left: 50px;
+    padding: 15px;
+    /* background-color:rgba(184, 185, 106, 0.63); */
+}
+.buddy__content{
+  /* border: solid red; */
+  margin: auto;
+  margin-top: 60px;
+}
+@media only screen and (min-width: 800px) {
+  .buddy__content{
+   max-width: 85%;
+  }
+}
+
+
+.buddy__content p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: rgb(47, 46, 46);
+}
+
+.buddy__content h6{
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: rgb(47, 46, 46);
+  /* background-color: #aed3091a; */
+}
+
+@media only screen and (max-width: 800px) {
+  .buddy__content{
+  padding: 15px;
+  margin-top: 10px;
+  }
+  .buddy__main{
+    height: 200px;
+  }
+  .buddy__main__head{
+    position: absolute; bottom: 20px; 
+  margin-left: 20px;
+    padding: 5px;
+    /* background-color:rgba(184, 185, 106, 0.63); */
+}
+.buddy__main h1{
+  
+font-size: 15px;
+
+}
+}

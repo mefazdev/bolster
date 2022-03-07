@@ -1,0 +1,47 @@
+.career{
+    background: transparent linear-gradient(369deg, rgba(182, 184, 68, 0.404) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+    padding-top: 70px;
+}
+
+.career__main{
+    background: url('../assets/images/career.JPG');
+    height:400px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .career__content{
+     max-width: 85%;
+    }
+  }
+  .career__content{
+      margin: auto;
+      margin-top: 60px;
+   min-height: 50vh;
+  }
+
+  
+
+
+
+
+
+.career__content p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: rgb(47, 46, 46);
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .career__content{
+  padding: 15px;
+  margin-top: 10px;
+  }
+ 
+ 
+
+}

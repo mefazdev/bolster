@@ -1,0 +1,100 @@
+.vision{
+  /* height: 200vh; */
+ padding-top: 70px;
+
+  background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+}
+@media only screen and (min-width: 800px) {
+    .vision__content{
+     max-width: 85%;
+    }
+  }
+
+  .vision__content{
+ 
+      margin: auto;
+      margin-top: 50px;
+      padding-bottom: 50px;
+  }
+  .vision__sub{
+  padding: 5px;
+      max-width: 150px;
+    font-family: 'Poppins', sans-serif;
+    background-color:rgb(201, 202, 118);
+  }
+
+  .vision__img{
+
+    /* max-width: 300px; */
+    min-height: 350px;
+  background: url('../assets/images/vision.jpg');
+background-size: cover;  
+position: relative;
+
+/* border: saddlebrown solid; */
+}
+.vision__row{
+  /* height: 200px; */
+
+  position: absolute;
+   bottom: 0px; 
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: #fff;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.mision__img{
+    /* max-width: 300px; */
+    min-height: 350px;
+  background: url('../assets/images/mision.jpg');
+background-size: cover;  
+position: relative;
+margin-top: 20px;
+
+}
+.mision__img p{
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .vision__content{
+    /* border: saddlebrown solid; */
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    padding: 15px;
+    height: 100%;
+}
+
+.mision__img{
+  /* max-width: 300px; */
+
+background: url('../assets/images/mision.jpg');
+background-size: cover;  
+position: relative;
+margin-top: 30px;
+min-height: 200px;
+
+}
+.vision__img{
+
+  /* max-width: 300px; */
+  min-height: 200px;
+background: url('../assets/images/vision.jpg');
+background-size: cover;  
+position: relative;
+background-position: center;
+
+}
+
+#mission__row{
+/* height: 200px; */
+
+position: absolute;
+
+
+}
+
+}

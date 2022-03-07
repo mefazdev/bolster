@@ -1,0 +1,164 @@
+.programmes{
+    padding-top: 70px;
+    background-color:rgba(201, 202, 118, 0.137);
+    background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+}
+.programmes__main{
+    background: url('../assets/images/pg-bg.JPG');
+    height:400px;
+    position: relative;
+    background-size: cover;
+    /* background-position: center; */
+}
+.programmes__main h1{
+    font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+color: #fff;
+}
+.programmes__content{
+   
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+@media only screen and (min-width: 800px) {
+    .programmes__content{
+     max-width: 85%;
+    }
+  }
+
+  .programmes__item__one{
+     
+      height: 200px;
+position: relative;
+      background-size: cover;
+      background-image: url('../assets/images/campus.jpg');
+  }
+  .programmes__item__two{
+    height: 200px;
+    background-image: url('../assets/images/buddy.JPG');
+    background-size: cover;
+    position: relative;
+  }
+  .programmes__item__three{
+    height: 200px;
+    background-image: url('../assets/images/career.JPG');
+    position: relative;
+    background-size: cover;
+  }
+  .programmes__item__four{
+    position: relative;
+    height: 200px;
+    background-image: url('../assets/images/me-time.JPG');
+    background-size: cover;
+   
+  }
+  .programmes__item__five{
+    position: relative;
+    height: 200px;
+    background-image: url('../assets/images/skill.JPG');
+    background-size: cover;
+  }
+  .programmes__item__six{
+    position: relative;
+    height: 200px;
+    background-image: url('../assets/images/madrasa.jpeg');
+    background-size: cover;
+    
+  }
+  .programmes__item__seven{
+    position: relative;
+    height: 200px;
+    background-image: url('../assets/images/camp.jpeg');
+    background-size: cover;
+    opacity: .99;
+  }
+  .programmes__item__eight{
+    position: relative;
+    height: 200px;
+    background-image: url('https://images.unsplash.com/photo-1565843248736-8c41e6db117b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+  }
+
+
+
+  #programmes__second__row{
+      margin-top: 20px;
+  }
+
+  .programmes__caption{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
+    height: 40px;
+    width: 100%;
+  align-items: center;
+  display: flex;
+  color: #fff;
+    /* max-width: 200px; */
+    max-width: 100%;
+    position: absolute; bottom: 0px; 
+    background-color:rgba(0, 0, 0, 0.726) ;
+  }
+
+  .programmes__item__one:hover{
+    opacity: 1;
+    transform: scale(1.01); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+  }
+  .programmes__item__two:hover{
+    opacity: 1;
+    transform: scale(1.01); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+  }
+  .programmes__item__three:hover{
+    opacity: 1;
+    transform: scale(1.01); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+  }
+.programmes__item__four:hover{
+    opacity: 1;
+    transform: scale(1.01); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+  }
+  .programmes__item__five:hover{
+    opacity: 1;
+    transform: scale(1.01); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+  }
+  .programmes__item__six:hover{
+    opacity: 1;
+    transform: scale(1.01); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+  }
+  .programmes__item__seven:hover{
+    opacity: 1;
+    transform: scale(1.01); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+  }
+    .programmes__item__eight:hover{
+    opacity: 1;
+    transform: scale(1.01); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    .programmes__main{
+      
+      height:200px;
+     
+      /* background-position: center; */
+  }
+  .programmes__content{
+    padding: 15px;
+    padding-bottom: 50px;
+  }
+  }

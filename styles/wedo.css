@@ -1,0 +1,118 @@
+.do{
+    /* border: saddlebrown solid; */
+    padding-top: 70px;
+    background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+}
+
+.do__main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.911)), url("../assets/images/pg.jpg");
+    /* background: url('../assets/images/pg.jpg'); */
+    height:400px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.do__main h1{
+    font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+color: #fff;
+}
+
+.do__content{
+    /* border: saddlebrown solid; */
+
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 800px) {
+    .do__content{
+     max-width: 85%;
+    }
+  }
+
+  .do__sub{
+    font-family: 'Poppins', sans-serif;
+    max-width: 150px;
+    padding: 5px;
+  background-color:rgb(201, 202, 118); 
+  }
+  .do__row p{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .do__box{
+    /* border: saddlebrown solid; */
+    /* background: url('../assets/images/madrasa.jpg'); */
+    height: 300px;
+    background-size: cover;
+    background-position: bottom;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.911)), url("../assets/images/madrasa.jpg");
+    /* width: 100%; */
+    position: relative;
+  }
+
+  .do__caption{
+    position: absolute; bottom: 0px; 
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.171);
+    padding: 15px;
+  }
+
+  .do__box__two{
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.911)), url("../assets/images/girls.jpg");
+    /* width: 100%; */
+    position: relative;
+    margin-top: 40px;
+  }
+
+  @media only screen and (max-width: 800px) {
+  
+    .do{
+
+      padding-top: 60px;
+  }
+  
+  .do__main{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.246), rgba(0, 0, 0, 0.692)), url("../assets/images/pg.jpg");
+      
+      height:200px;
+   
+  }
+  .do__main h1{
+    font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+color: #fff;
+}
+
+.do__content{
+  
+     padding: 15px;
+
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+
+  
+ 
+  .do__box{
+   
+    height: 250px;
+   
+  }
+
+ 
+
+  .do__box__two{
+    height: 250px;
+   
+    margin-top: 30px;
+  }
+  }

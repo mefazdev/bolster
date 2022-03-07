@@ -1,0 +1,131 @@
+.about{
+    padding-top: 70px;
+    background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+}
+.about__main{
+    background: url('../assets/images/scroll-2.jpg');
+    height:400px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.about__main__head h1{
+    font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+color: #fff;
+}
+.about__main__head{
+    position: absolute; bottom: 20px; 
+  background-color: rgba(0, 0, 0, 0.781);
+    margin-left: 50px;
+    padding: 15px;
+    /* background-color:rgba(184, 185, 106, 0.63); */
+}
+
+.about__content{
+margin: auto;
+/* border: saddlebrown solid; */
+margin-top: 40px;
+padding-bottom: 100px;
+
+
+}
+@media only screen and (min-width: 800px) {
+    .about__content{
+     max-width: 85%;
+    }
+  }
+
+  .about__content h2{
+    color: rgb(92, 88, 88);
+    font-family: 'Poppins', sans-serif;
+font-size: 20px;
+/* text-align: center;  */
+  } 
+  .about__content p{
+      color: rgb(92, 88, 88);
+      font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+margin-top: 10px;
+line-height: 30px;
+  }
+
+  .about__img{
+      max-width: 300px;
+      margin: auto;
+  }
+
+
+  .about__bar{
+      float: right;
+      width: 100%;
+      max-width: 250px;
+      box-shadow: 2px 4px 12px 1px rgba(128, 128, 128, 0.157);
+      /* border: solid red; */
+      /* height: 300px; */
+      background-color: #fff;
+  }
+  .about__bar__row{
+      font-size: 14px;
+      padding: 10px;
+      
+      color: rgb(44, 42, 42);
+      font-family: 'Poppins', sans-serif;
+      border-bottom: 1px solid rgba(184, 185, 106, 0.561);
+  }
+ 
+  .about__bar__row:hover{
+    background-color: rgb(230, 228, 228);
+  }
+  @media only screen and (max-width: 800px) {
+    .about__main__head{
+        position: absolute; 
+        bottom: 20px; 
+       
+      background-color: rgba(0, 0, 0, 0.616);
+      margin: auto;
+    
+        margin-left: 15px;
+        padding: 10px;
+        /* background-color:rgba(184, 185, 106, 0.63); */
+    }
+    
+  .about__bar{
+    float: none;
+   
+ 
+    margin-top: 20px;
+}
+.about__bar__row{
+    
+    padding: 10px;
+    padding-left: 3;
+    
+ 
+}
+
+.about__main{
+  
+    height:250px;
+    position: relative;
+    background-size: cover;
+}
+.about{
+    padding-top: 60px;
+ 
+}
+.about__content{
+    margin: auto;
+    /* border: saddlebrown solid; */
+    margin-top: 20px;
+    padding-bottom: 100px;
+    padding: 15px;
+    
+    
+    }
+ 
+    
+      
+    
+   
+  }

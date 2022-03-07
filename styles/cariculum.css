@@ -1,0 +1,48 @@
+.cariculum{
+    background: transparent linear-gradient(369deg, rgba(182, 184, 68, 0.404) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+    padding-top: 70px;
+   
+}
+ 
+.cariculum__main{
+    background: url('../assets/images/camp.jpeg');
+    height:400px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (min-width: 800px) {
+    .cariculum__content{
+     max-width: 85%;
+    }
+  }
+  .cariculum__content{
+      margin: auto;
+      margin-top: 60px;
+      min-height: 40vh;
+
+  }
+  .cariculum__content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: rgb(47, 46, 46);
+  }
+
+  .cariculum__content button{
+    background-color: rgb(9, 92, 9);
+    
+
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    margin-top: 15px;
+  }
+  .cariculum__content button:hover{
+      opacity: .9;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .cariculum__content{
+     padding: 15px;
+    }
+  }

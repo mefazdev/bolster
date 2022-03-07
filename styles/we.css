@@ -1,0 +1,212 @@
+.we{
+   
+
+    padding-top: 70px;
+    background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+    /* background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box; */
+}
+.we__main{
+    background: url('../assets/images/bolster.jpg');
+    height: 400px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.we__main h1{
+    font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+color: #fff;
+}
+
+.we__content{
+margin: auto;
+/* border: saddlebrown solid; */
+margin-top: 50px;
+padding-bottom: 150px;
+}
+.we__sub{
+  font-family: 'Poppins', sans-serif;
+    max-width: 150px;
+    padding: 5px;
+  background-color:rgb(201, 202, 118); 
+}
+
+@media only screen and (min-width: 800px) {
+    .we__content{
+     max-width: 85%;
+    }
+  }
+
+.we__row{
+  margin-top: 10px;
+}
+  .we__item{
+    padding: 13px;
+   /* border: solid 1px rgba(128, 128, 128, 0.287);
+   background-color: #fff; */
+    /* height: 300px; */
+    max-height: 255px;
+   /* background-color: rgba(0, 0, 0, 0.904); */
+    overflow: hidden;
+    max-width: 230px;
+  
+    /* overflow-y: scroll; */
+    /* border: saddlebrown solid; */
+  }
+  .we__item__full{
+  
+    padding: 13px;
+    border: solid 1px rgba(128, 128, 128, 0.287);
+    background-color: #fff;
+     /* height: 300px; */
+     max-width: 230px;
+     overflow: hidden;
+    max-height: 100%;
+    /* overflow-y: scroll; */
+  }
+  .we__item:hover{
+    transform: scale(1.01); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+  }
+
+  .we__item h6{
+    color: rgb(66, 63, 63);
+    /* color: #fff; */
+    /* background-color: rgb(201, 202, 118); */
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  .we__item h5{
+    /* color: rgb(66, 63, 63); */
+    color: rgb(133, 103, 103);
+    /* color: #fff; */
+    /* background-color: rgb(201, 202, 118); */
+    margin-top: 1px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+  }.we__item__full h5{
+    /* color: rgb(66, 63, 63); */
+    color: rgb(133, 103, 103);
+    /* color: #fff; */
+    /* background-color: rgb(201, 202, 118); */
+    margin-top: 1px;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .we__item__full h6{
+    /* color: rgb(133, 103, 103); */
+    /* background-color: rgb(201, 202, 118); */
+    margin-top: 5px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+
+  }
+.we__img{
+ /* max-width: 140px; */
+ margin: auto;
+
+width: 136px;
+height: 140px;
+background-color: rgb(207, 207, 207);
+ /* border: saddlebrown solid; */
+ overflow: hidden;
+ border-radius: 50%;
+ display: flex;
+ /* justify-content: center; */
+ /* align-items: center; */
+}
+.team__row{
+  margin-top: 20px;
+}
+.we__text p{
+  color: rgb(66, 63, 63);
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5px;
+  font-size: 15px;
+
+ 
+} 
+@media only screen and (max-width: 800px) {
+  .we__main{
+    background: url('../assets/images/bolster.jpg');
+    height:200px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.we{
+   
+
+  padding-top: 60px;
+ 
+}
+.we__content{
+  margin: auto;
+  /* border: saddlebrown solid; */
+  margin-top: 20px;
+  padding: 15px;
+  padding-bottom: 50px;
+  }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .we__img{
+    /* max-width: 140px; */
+    margin: auto;
+   
+   width: 120px;
+   height: 120px;
+   background-color: rgb(207, 207, 207);
+    /* border: saddlebrown solid; */
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+   }
+   .team__row{
+     margin-top: 20px;
+   }
+   .we__sub{
+    font-family: 'Poppins', sans-serif;
+      max-width: 100%;
+      padding: 5px;
+      padding-left: 10px;
+    background-color:rgb(201, 202, 118); 
+  }
+}
+
+
+/* .we__box{
+  background-color: #fff;
+    padding: 15px;
+  
+    margin-top: 20px;
+  
+    box-shadow: 2px 3px 12px 1px rgba(182, 173, 173, 0.486) ;
+}
+.we__box  img{
+    height: 150px;
+    align-items: center;
+    
+}
+.we__box h4{
+  color: rgb(53, 49, 49);
+    font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 15px;
+
+}
+
+*/
