@@ -288,24 +288,24 @@ margin-top: 15px;
   
 }
 .prgm__content__row__box{
-    background-image: url('../assets/images/buddy.JPG');
+    background-image: url('../assets/images/buddy.jpg');
 background-size: cover;
 height: 230px;
 }
 .prgm__content__row__box__two{
-    background-image: url('../assets/images/career.JPG');
+    background-image: url('../assets/images/career.jpg');
 background-size: cover;
 position: relative;
 height: 230px;
 }
 .prgm__content__row__box__three{
-    background-image: url('../assets/images/me-time.JPG');
+    background-image: url('../assets/images/me-time.jpg');
 background-size: cover;
 position: relative;
 height: 230px;
 }
 .prgm__content__row__box__four{
-    background-image: url('../assets/images/skill.JPG');
+    background-image: url('../assets/images/skill.jpg');
 background-size: cover;
 position: relative;
 height: 230px;
