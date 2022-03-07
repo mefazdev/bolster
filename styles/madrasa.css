@@ -27,3 +27,9 @@
     font-size: 16px;
     color: rgb(47, 46, 46);
   }
+
+  @media only screen and (max-width: 800px) {
+    .madrasa__content{
+ padding: 15px;
+    }
+  }

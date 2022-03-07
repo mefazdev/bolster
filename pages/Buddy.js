@@ -5,7 +5,7 @@ export default function Buddy() {
   return (
     <div>
       <Navbar />
-      <div className="buddy">
+      <div className="buddy" style={{scrollBehavior:'smooth'}}>
         <div className="buddy__main">
           <div className="buddy__main__head">
             <h1>Bolster foundation</h1>

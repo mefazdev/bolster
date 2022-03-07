@@ -6,7 +6,7 @@ export default function Career() {
   return (
     <div>
       <Navbar />
-      <div className="career">
+      <div className="career" style={{scrollBehavior:'smooth'}}>
         <div className="career__main">
           <div className="about__main__head">
             <h1>Bolster Career Solutions</h1>

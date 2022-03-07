@@ -14,7 +14,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="about">
+      <div className="about" style={{scrollBehavior:'smooth'}}>
         <div className="about__main">
           <div className="about__main__head">
             <h1>Bolster foundation</h1>

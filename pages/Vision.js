@@ -9,7 +9,7 @@ export default function Vision() {
   return (
     <div>
       <Navbar />
-      <div className="vision">
+      <div className="vision" style={{scrollBehavior:'smooth'}}>
         <div className="about__main">
           <div className="about__main__head">
             <h1>Vison & Mission</h1>

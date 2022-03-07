@@ -6,7 +6,7 @@ export default function Cariculum() {
   return (
     <div>
       <Navbar />
-      <div className="cariculum">
+      <div className="cariculum" style={{scrollBehavior:'smooth'}}>
         <div className="cariculum__main">
           <div className="about__main__head">
             <h1>Bolster Summer Camps </h1>

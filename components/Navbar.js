@@ -45,7 +45,7 @@ export default function Navbar() {
               <Image src={logo} />
             </Link>
             <Link href="/">
-              <div>
+              <div className="log__right">
                 <h2>BOLSTER</h2>
                 <h3>FOUNDATION</h3>
               </div>

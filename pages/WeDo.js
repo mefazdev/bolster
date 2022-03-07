@@ -7,7 +7,7 @@ export default function weDo() {
     <div>
       <Navbar />
 
-      <div className="do">
+      <div className="do" style={{scrollBehavior:'smooth'}}>
         <div className="do__main">
           <div className="about__main__head">
             <h1>What we do</h1>

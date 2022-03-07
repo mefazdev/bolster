@@ -21,6 +21,11 @@
       margin-top: 60px;
    min-height: 50vh;
   }
+  @media only screen and (max-width: 800px) {
+    .career__content{
+    padding: 15px
+    }
+  }
 
   
 

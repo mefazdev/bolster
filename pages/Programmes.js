@@ -8,7 +8,7 @@ export default function Programmes() {
     <div>
       <Navbar />
 
-      <div className="programmes">
+      <div className="programmes" style={{scrollBehavior:'smooth'}}>
         <div className="programmes__main">
           <div className="about__main__head">
             <h1>Programmes</h1>

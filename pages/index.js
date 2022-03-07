@@ -39,7 +39,7 @@ export default function Home() {
       </Head>
       <Navbar />
 
-      <main className="home">
+      <main className="home " style={{scrollBehavior:'smooth'}}>
         <MainBanner />
         <div className="home__social">
           <a href="https://www.facebook.com/bolsterfoundation/">

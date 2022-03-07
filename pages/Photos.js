@@ -13,7 +13,7 @@ export default function Photos() {
     <div>
       <Navbar />
 
-      <div className="photos">
+      <div className="photos" style={{scrollBehavior:'smooth'}}>
         <div className="blogs__main">
           <div className="about__main__head">
             <h1>Photo Gallery</h1>

@@ -6,7 +6,7 @@ export default function Video() {
     <div>
       <Navbar />
 
-      <div className="vidoe">
+      <div className="vidoe" style={{scrollBehavior:'smooth'}}>
         <div className="blogs__main">
           <div className="about__main__head">
             <h1>Video Gallery</h1>

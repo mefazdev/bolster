@@ -58,7 +58,7 @@ export default function Blog({ initailValue }) {
   return (
     <div>
       <Navbar />
-      <div className="blog">
+      <div className="blog" style={{scrollBehavior:'smooth'}}>
         <div className="blogs__main">
           <div className="about__main__head">
             <h1>Blog</h1>

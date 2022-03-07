@@ -42,7 +42,7 @@ export default function Blogs() {
           </div>
         </div>
 
-        <div className="blogs__content">
+        <div className="blogs__content" style={{scrollBehavior:'smooth'}}>
           {data.map((data, index) => {
             const date = moment(data.date).format("MMM DD YYYY");
             const content = data.content.slice(0, 600);

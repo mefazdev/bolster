@@ -34,7 +34,7 @@ export default function We() {
   return (
     <div>
       <Navbar />
-      <div className="we">
+      <div className="we" style={{scrollBehavior:'smooth'}}>
         <div className="we__main">
           <div className="about__main__head">
             <h1>Who we are</h1>

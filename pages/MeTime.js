@@ -6,7 +6,7 @@ export default function MeTime() {
   return (
     <div>
       <Navbar />
-      <div className="me">
+      <div className="me" style={{scrollBehavior:'smooth'}}>
         <div className="me__main">
           <div className="about__main__head">
             <h1>Me time</h1>

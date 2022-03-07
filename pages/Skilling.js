@@ -6,7 +6,7 @@ export default function Skilling() {
   return (
     <div>
       <Navbar />
-      <div className="skill">
+      <div className="skill" style={{scrollBehavior:'smooth'}}>
         <div className="skill__main">
           <div className="about__main__head">
             <h1>Bolster skilling</h1>

@@ -6,7 +6,7 @@ export default function Madrasa() {
   return (
     <div>
       <Navbar />
-      <div className="madrasa">
+      <div className="madrasa" style={{scrollBehavior:'smooth'}}>
         <div className="madrasa__main">
           <div className="about__main__head">
             <h1>Madrasa development</h1>
