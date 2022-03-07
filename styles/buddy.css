@@ -5,7 +5,7 @@
     background: transparent linear-gradient(369deg, rgba(182, 184, 68, 0.404) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
 }
 .buddy__main{
-    background: url('../assets/images/buddy.JPG');
+    background: url('../assets/images/buddy.jpg');
     height:400px;
     position: relative;
     background-size: cover;

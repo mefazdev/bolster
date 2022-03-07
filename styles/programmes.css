@@ -4,7 +4,7 @@
     background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
 }
 .programmes__main{
-    background: url('../assets/images/pg-bg.JPG');
+    background: url('../assets/images/pg-bg.jpg');
     height:400px;
     position: relative;
     background-size: cover;
@@ -36,27 +36,27 @@ position: relative;
   }
   .programmes__item__two{
     height: 200px;
-    background-image: url('../assets/images/buddy.JPG');
+    background-image: url('../assets/images/buddy.jpg');
     background-size: cover;
     position: relative;
   }
   .programmes__item__three{
     height: 200px;
-    background-image: url('../assets/images/career.JPG');
+    background-image: url('../assets/images/career.jpg');
     position: relative;
     background-size: cover;
   }
   .programmes__item__four{
     position: relative;
     height: 200px;
-    background-image: url('../assets/images/me-time.JPG');
+    background-image: url('../assets/images/me-time.jpg');
     background-size: cover;
    
   }
   .programmes__item__five{
     position: relative;
     height: 200px;
-    background-image: url('../assets/images/skill.JPG');
+    background-image: url('../assets/images/skill.jpg');
     background-size: cover;
   }
   .programmes__item__six{
