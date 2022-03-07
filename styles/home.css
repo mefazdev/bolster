@@ -894,7 +894,7 @@ padding-bottom: 30px;
   
       height: 300px;
       width: 100%;
-      background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../assets/images/edu.JPG') repeat;
+      background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../assets/images/edu.jpg') repeat;
            /* background-image: url('../assets/images/edu.JPG'); */
       background-size: cover;
       background-attachment: fixed;
