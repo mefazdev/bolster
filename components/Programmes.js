@@ -18,22 +18,23 @@ export default function Programmes() {
           <div className="prgm__content__main__right">
             <h4> Bolster Girls Campus </h4>
             <p>
-              Bolster Girls Campus (BGC) is a residential program for girls by
-              Bolster Foundation. The project is initiated by a group of
-              educated youngsters, who were bestowed with the opportunity of
-              doing courses in reputed institutions like Indian Institute of
-              Technology Kanpur, Jawaharlal Nehru University, University of
-              Delhi and Azim Premji University. BGCoffers Higher Secondary
-              schooling in streams of science, commerce and humanities along
-              with regressive coaching for different medical entrance exams,
-              foundation for CA/CMA, foundation course for UPSC, and entrance
-              examination training for different universities and premier
-              institutes. BGC does not limit its students to boxes of limited
-              choices. BGC encourages them to seek opportunities beyond
-              conventions. BGC&apos;s personalised learning approach and
-              effective career solutions help students to understand their
-              passions, skills, and areas of strengths and weaknesses. It is
-              BG&apos;s promise:You will do what you love!
+              
+              
+               Bolster Girls Campus
+              (BGC) is a residential program for girls by Bolster Foundation.
+              The project is by educated youngsters bestowed to do courses in
+              reputed institutions like the Indian Institute of Technology
+              Kanpur, Jawaharlal Nehru University, University of Delhi, and Azim
+              Premji University. BGCoffers Higher Secondary schooling in
+              science, commerce, and humanities streams, regress coaching for
+              different medical entrance exams, Foundation for CA/CMA,
+              foundation course for UPSC, and entrance examination training for
+              various universities and premier institutes. BGC does not limit
+              its students to boxes of limited choices. BGC encourages them to
+              seek opportunities beyond conventions. BGC&apos;s personalized learning
+              approach and effective career solutions help students to
+              understand their passions, skills, and areas of strengths and
+              weaknesses. It is BG'&apos;s promise: You will do what you love!
             </p>
             <a href="https://www.bolstercampus.in/">
               <button>Learn More</button>

@@ -19,6 +19,7 @@ import '../styles/me.css'
 import '../styles/skill.css'
 import '../styles/madrasa.css'
 import '../styles/cariculum.css'
+import '../styles/testimonial.css'
 function MyApp({ Component, pageProps }) {
   return (
     <>

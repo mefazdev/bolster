@@ -6,7 +6,7 @@ export default function Skilling() {
   return (
     <div>
       <Navbar />
-      <div className="skill" style={{scrollBehavior:'smooth'}}>
+      <div className="skill" style={{ scrollBehavior: "smooth" }}>
         <div className="skill__main">
           <div className="about__main__head">
             <h1>Bolster skilling</h1>
@@ -15,7 +15,6 @@ export default function Skilling() {
 
         <div className="skill__content">
           <p>
-            {" "}
             Adolescents (children aged 10–19) grow up in a transforming world.
             Technology, migration, climate change, and conflict are reshaping
             society, forcing people across the globe to adapt to unexpected
@@ -27,9 +26,9 @@ export default function Skilling() {
             preparing adolescents for the modern employment market. UNICEF
             understands that concerted investment and coordination to strengthen
             education systems are needed. All adolescents, especially the most
-            marginalized, can acquire skills that help them fulfil their
+            marginalized, can acquire skills that help them fulfill their
             potential. Transferable skills are one of such significant areas to
-            be focused on.{" "}
+            be focused on.
           </p>
 
           <p className="lg:pt-5">
@@ -54,13 +53,12 @@ export default function Skilling() {
             crucial phase of life to be relished. It is a time of discovery,
             finding meaning, and developing independence. Youth everywhere seek
             relevance and the right and space to discover, fail, and be
-            respected. They want their voices to be heard and the desire to
+            respected. They want their voices to be heard and desire to
             contribute. The youths are valuable people and outstanding citizens
             who bring fresh ideas, knowledge, and learning. However, they often
             lack opportunities and are given more of the same. How can we create
             more space, time, pathways, and positive learning experiences for
-            them? The present camp proposes to address this concern.
-            <br />
+            them? The present camp proposes to address this concern. <br />
             Bolster Foundation understands that we need an approach
             characterized by big picture thinking, fostering imagination and
             inquiry, and building grit through social-emotional learning and
@@ -68,7 +66,7 @@ export default function Skilling() {
             thinking beyond analytical thinking. It implies the design of tasks
             where education has purposeful connections to the world beyond the
             classroom and provides for different needs and interests of the
-            learners. We advocate the use of real-world problems: wherein
+            learners. We advocate the use of real-world problems. Wherein
             solving a problem, students need to get the facts of the bigger
             picture and inter-related issues before going into the analytical
             and logical reasoning.

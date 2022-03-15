@@ -82,7 +82,7 @@ export default function Navbar() {
                   <Link href="/Vision">
                     <div
                       className={
-                        router.pathname == "/Faculty"
+                        router.pathname == "/Vision"
                           ? "active__dropdown py-2"
                           : "service__group__span py-2"
                       }
@@ -96,7 +96,7 @@ export default function Navbar() {
                   <Link href="/We">
                     <div
                       className={
-                        router.pathname == "/Faculty"
+                        router.pathname == "/We"
                           ? "active__dropdown py-2"
                           : "service__group__span py-2"
                       }
@@ -109,31 +109,33 @@ export default function Navbar() {
 
                   <div
                     className={
-                      router.pathname == "/Faculty"
+                      router.pathname == "/Milestone"
                         ? "active__dropdown py-2"
                         : "service__group__span py-2"
                     }
                   >
-                    <li className=" px-4 block whitespace-no-wrap text-sm ">
+                    <Link href='/Milestone'><li className=" px-4 block whitespace-no-wrap text-sm ">
                       Milestones
-                    </li>
+        </li></Link>
+                    
                   </div>
 
                   <div
                     className={
-                      router.pathname == "/Faculty"
+                      router.pathname == "/Testimonial"
                         ? "active__dropdown py-2"
                         : "service__group__span py-2"
                     }
                   >
-                    <li className=" px-4 block whitespace-no-wrap text-sm ">
+                    <Link href='/Testimonial'><li className=" px-4 block whitespace-no-wrap text-sm ">
                       Testimonials
-                    </li>
+                    </li></Link>
+                    
                   </div>
 
                   <div
                     className={
-                      router.pathname == "/Faculty"
+                      router.pathname == "/F"
                         ? "active__dropdown py-2"
                         : "service__group__span py-2"
                     }

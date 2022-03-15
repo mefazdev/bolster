@@ -34,7 +34,7 @@ export default function Involve() {
             <div className="hm__involve__box">
               <WorkIcon id="involve__icon" />
               <div className="involve__icon__caption">
-                <h4>Oppenings</h4>
+                <h4>Openings</h4>
               </div>
             </div>
           </Link>

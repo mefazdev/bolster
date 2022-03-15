@@ -16,14 +16,7 @@ export default function MeTime() {
         <div className="me__content">
           <p>
             {" "}
-            &apos;Me Time&apos; is the conscious effort of taking (much needed)
-            time-out to recharge your batteries. Me time can be spent in a range
-            of ways and can vary for person to person. It can be achieved
-            through different ways. Essentially, as long as you’re alone with
-            your thoughts and undertaking mindfulness during any activity,
-            you’re successfully spending some quality ME time. With the help of
-            expertise from different fields Bolster foundation facilitates Me
-            time in Bolster Girls Campus.{" "}
+            &apos;Me Time&apos; is the conscious effort of taking (much needed) time-out to recharge your batteries. 'Me time' can be spent in various ways and vary from person to person. It can be achieved in different ways. Essentially, as long as you're alone with your thoughts and undertaking mindfulness during any activity, you're successfully spending some quality ME time. With the help of experts from different fields, Bolster foundation facilitates 'Me time' in Bolster Girls Campus.{" "}
           </p>
         </div>
       </div>
