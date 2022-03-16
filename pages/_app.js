@@ -20,6 +20,9 @@ import '../styles/skill.css'
 import '../styles/madrasa.css'
 import '../styles/cariculum.css'
 import '../styles/testimonial.css'
+
+import '../styles/impact.css'
+import '../styles/milestones.css'
 function MyApp({ Component, pageProps }) {
   return (
     <>

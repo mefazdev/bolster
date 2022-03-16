@@ -13,16 +13,18 @@ export default function Slider() {
         stopAutoPlayOnHover={false}
       >
         <div className="slider__item__one">
+        <h5>Our approach</h5>
           <div className="slider__content">
-            <h5>Our approach</h5>
+            
             <div className="slider__main">
               <h3>EDUCATE</h3>
             </div>
           </div>
         </div>
         <div className="slider__item__two ">
+        <h5>Our approach</h5>
           <div className="slider__content">
-            <h5>Our approach</h5>
+            
             <div className="slider__main">
               {" "}
               <h3>EMPOWER</h3>
@@ -30,8 +32,9 @@ export default function Slider() {
           </div>
         </div>
         <div className="slider__item__three">
+        <h5>Our approach</h5>
           <div className="slider__content">
-            <h5>Our approach</h5>
+            
             <div className="slider__main">
               <h3>Change</h3>
             </div>

@@ -1,0 +1,21 @@
+.m__stone{
+  background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+
+}
+.m__stone__head {
+    font-family: 'Poppins', sans-serif;
+    max-width: 150px;
+    padding: 3px;
+    font-size: 14px;
+  background-color:rgb(201, 202, 118); 
+}
+.m__stone__row p{
+font-size: 17px;
+color: black;
+
+}
+.m__stone__row{
+  margin-top: 30px;
+  padding-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}

@@ -114,7 +114,7 @@ export default function Navbar() {
                         : "service__group__span py-2"
                     }
                   >
-                    <Link href='/Milestone'><li className=" px-4 block whitespace-no-wrap text-sm ">
+                    <Link href='/Milestones'><li className=" px-4 block whitespace-no-wrap text-sm ">
                       Milestones
         </li></Link>
                     

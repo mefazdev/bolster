@@ -1,7 +1,8 @@
 .about{
     padding-top: 70px;
     background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
-}
+
+  }
 .about__main{
     background: url('../assets/images/scroll-2.jpg');
     height:400px;
