@@ -19,7 +19,7 @@ export default function Testimonial() {
           </div>
         </div>
         <div className="testi__content">
-          <div class="message received">
+          <div className="message received">
             <span id="random">
               <p>
                 It was a pleasant experience to participate in the Bolster
@@ -30,14 +30,14 @@ export default function Testimonial() {
                 interact with many people.{" "}
               </p>
             </span>
-            <span class="metadata">
-              <span class="times">
+            <span className="metadata">
+              <span className="times">
                 <h6>Hanna on Camp</h6>
               </span>
             </span>
           </div>
 
-          <div id="right__chat" class="message received">
+          <div id="right__chat" className="message received">
             <span id="random">
               <p>
                 I am lucky enough to join the Bolster Buddy program by the
@@ -47,14 +47,14 @@ export default function Testimonial() {
                 plan my career.
               </p>
             </span>
-            <span class="metadata">
-              <span class="times">
+            <span className="metadata">
+              <span className="times">
                 <h6>Fidha on Bolster Buddy </h6>
               </span>
             </span>
           </div>
 
-          <div class="message received">
+          <div className="message received">
             <span id="random">
               <p>
                 I wanted to explore the world beyond the limits of classrooms
@@ -66,14 +66,14 @@ export default function Testimonial() {
                 memories.{" "}
               </p>
             </span>
-            <span class="metadata">
-              <span class="times">
+            <span className="metadata">
+              <span className="times">
                 <h6>Zenha, on Camp</h6>
               </span>
             </span>
           </div>
 
-          <div id="right__chat" class="message received">
+          <div id="right__chat" className="message received">
             <span id="random">
               <p>
                 After high school, I was looking for someone who could tell me
@@ -85,8 +85,8 @@ export default function Testimonial() {
                 empowered to decide on my future.{" "}
               </p>
             </span>
-            <span class="metadata">
-              <span class="times">
+            <span className="metadata">
+              <span className="times">
                 <h6>Ahmed, on career solutions </h6>
               </span>
             </span>

@@ -34,7 +34,7 @@ export default function Programmes() {
               seek opportunities beyond conventions. BGC&apos;s personalized learning
               approach and effective career solutions help students to
               understand their passions, skills, and areas of strengths and
-              weaknesses. It is BG'&apos;s promise: You will do what you love!
+              weaknesses. It is BG&apos;s promise: You will do what you love!
             </p>
             <a href="https://www.bolstercampus.in/">
               <button>Learn More</button>
