@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -10,7 +10,52 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneInput from "react-phone-number-input";
+import api from '../api/index.php'
 export default function Contact() {
+
+  const [name, setName] = useState('')
+  const [email,setEmail] = useState('')
+  const [message,setMessage] = useState('')
+  const [phone , setPhone] = useState()
+  const [sending, setSending] = useState(false)
+  const [verified, setVerified ]= useState(false)
+      
+ const data = {
+   name : name,
+   email : email,
+   phone : phone,
+   message : message,
+   mailSent: false,
+  error: null
+
+ }  
+ 
+
+ const API_PATH = api;
+ const send = async ()=>{
+  e.preventDefault();
+  axios({
+    method: 'post',
+    url: `${API_PATH}`,
+    headers: { 'content-type': 'application/json' },
+    data: data
+  })
+    // .then(result => {
+    //   this.setState({
+    //     mailSent: result.data.sent
+    //   })
+    // }
+    
+    // )
+    .catch(
+      // error => this.setState({ error: error.message })
+      console.log(error.message)
+      );
+
+  await console.log(data)
+  setSending(false)
+ }
+
   return (
     <div>
       <Navbar />
@@ -89,6 +134,7 @@ export default function Contact() {
 
               <div>
                 <form
+                action="#"
                   // onSubmit={sendForm}
                   className="grid grid-cols-1"
                 >
@@ -96,17 +142,25 @@ export default function Contact() {
                     required
                     name="name"
                     placeholder="Name"
-                    // onChange={(e)=>setName(e.target.value)}
+                    onChange={(e)=>setName(e.target.value)}
                   />
                   <input
                     required
                     name="email"
                     type="email"
                     placeholder="Email"
-                    // onChange={(e)=>setEmail(e.target.value)}
+                    onChange={(e)=>setEmail(e.target.value)}
                   />
                   {/* <div className='contact__phone__input'> */}
-                  <input required name="Phone" placeholder="Phone" />
+                  <input 
+                  required
+                   name="Phone"
+                   placeholder="Phone" 
+                  className='pl-2'
+                  value={phone}
+                  onChange={(e)=>setPhone(e.target.value    )}
+                  
+                  />
                   {/* <PhoneInput  
               name='phone'
                className='pl-2'
@@ -122,19 +176,21 @@ export default function Contact() {
                   <textarea
                     name="message"
                     placeholder="Message"
-                    // onChange={(e)=>setMessage(e.target.value)}
+                    onChange={(e)=>setMessage(e.target.value)}
                   />
                   {/* <ReCAPTCHA className='mt-3'
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                onChange={()=>setVerified(true)}
              /> */}
-                  <button
-                  // disabled={!verified}  type='submit'
-                  >
-                    SEND
-                    {/* {sending ? "SENDING..." :'SEND'} */}
-                  </button>
+                
                 </form>
+                <button
+                  // disabled={!verified}  type='submit'
+                  onClick={send}
+                  >
+                    {/* SEND` */}
+                    {sending ? "SENDING..." :'SEND'}  
+                  </button>
               </div>
             </div>
           </div>
