@@ -10,7 +10,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneInput from "react-phone-number-input";
-import api from '../api/index.php'
+// import api from '../api/index.php'
 export default function Contact() {
 
   const [name, setName] = useState('')
@@ -31,7 +31,7 @@ export default function Contact() {
  }  
  
 
- const API_PATH = api;
+ const API_PATH = '../api/index.php';
  const send = async ()=>{
   e.preventDefault();
   axios({
