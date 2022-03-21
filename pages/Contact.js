@@ -32,7 +32,7 @@ export default function Contact() {
  }  
  
 
- const API_PATH = '../api/index.php';
+ const API_PATH = 'https://bolster-amber.vercel.app/api/index';
  const send = async (e)=>{
   e.preventDefault();
   axios({
@@ -41,13 +41,14 @@ export default function Contact() {
     headers: { 'content-type': 'application/json' },
     data: data
   })
-    // .then(result => {
-    //   this.setState({
-    //     mailSent: result.data.sent
-    //   })
-    // }
+    .then(result => {
+      // this.setState({
+      //   mailSent: result.data.sent
+      // })
+      console.log('result >>>',result)
+    }
     
-    // )
+    )
     .catch(
       // error => this.setState({ error: error.message })
       console.log('error found ==>>')
