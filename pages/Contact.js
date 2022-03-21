@@ -10,6 +10,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneInput from "react-phone-number-input";
+import axios from "axios";
 // import api from '../api/index.php'
 export default function Contact() {
 
@@ -32,7 +33,7 @@ export default function Contact() {
  
 
  const API_PATH = '../api/index.php';
- const send = async ()=>{
+ const send = async (e)=>{
   e.preventDefault();
   axios({
     method: 'post',
@@ -49,7 +50,7 @@ export default function Contact() {
     // )
     .catch(
       // error => this.setState({ error: error.message })
-      console.log(error.message)
+      console.log('error found ==>>')
       );
 
   await console.log(data)
@@ -185,6 +186,7 @@ export default function Contact() {
                 
                 </form>
                 <button
+                style={{width:'100%'}}
                   // disabled={!verified}  type='submit'
                   onClick={send}
                   >
