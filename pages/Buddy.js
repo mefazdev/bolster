@@ -1,9 +1,28 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-
+import Head from 'next/head'
 export default function Buddy() {
   return (
     <div>
+
+<Head>
+        <title>Bolster Buddy</title>
+       
+        <meta
+          name="description"
+          content="
+          The foundation&apos;s bolster Buddy System (BBS) initiative enables
+          students from deprived backgrounds to grab admissions to premier
+          educational institutions in India and abroad. In collaborations with
+          various non-governmental organizations, student collectives, and
+          like-minded educationists, the program builds bondage between
+          students and voluntary mentors in eminent universities and
+          companies."
+        />
+        <meta property="og:title" content="Home" key="title" />
+        <link rel="canonical" href="https://www.bolsterfoundation.in/Buddy" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <div className="buddy" style={{ scrollBehavior: "smooth" }}>
         <div className="buddy__main">

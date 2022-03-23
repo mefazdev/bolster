@@ -5,6 +5,31 @@ import Navbar from "../components/Navbar";
 export default function Skilling() {
   return (
     <div>
+       <Head>
+        <title>Bolster Skilling</title>
+
+        <meta
+          name="description"
+          content="     Technology, migration, climate change, and conflict are reshaping
+          society, forcing people across the globe to adapt to unexpected
+          changes in their lives and work (UNICEF). To keep up, adolescents
+          must seize opportunities and confront challenges. They need
+          education and skills to become lifelong learners, secure, productive
+          work, make informed decisions, and positively engage in their
+          communities. It is the most significant global challenge to
+          preparing adolescents for the modern employment market. UNICEF
+          understands that concerted investment and coordination to strengthen
+          education systems are needed. All adolescents, especially the most
+          marginalized, can acquire skills that help them fulfill their
+          potential. Transferable skills are one of such significant areas to
+          be focused on.
+
+          "
+        />
+        <meta property="og:title" content="Home" key="title" />
+        <link rel="canonical" href="https://www.bolsterfoundation.in/Skilling" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <div className="skill" style={{ scrollBehavior: "smooth" }}>
         <div className="skill__main">
