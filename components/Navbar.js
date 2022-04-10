@@ -12,6 +12,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import logoText from '../assets/images/log-text.png' 
 export default function Navbar() {
   const router = useRouter();
 
@@ -40,7 +41,10 @@ export default function Navbar() {
     <div className="navbar">
       <div className="nav__content ">
         <div className="nav__container flex">
-          <div className="logo flex">
+          <div className="logo__text">
+            <Image src={logoText}/>
+          </div>
+          {/* <div className="logo flex">
             <Link href="/">
               <Image src={logo} />
             </Link>
@@ -50,7 +54,7 @@ export default function Navbar() {
                 <h3>FOUNDATION</h3>
               </div>
             </Link>
-          </div>
+          </div> */}
           <div className="nav__item__row flex">
             <span className="flex nav__item__span group cursor-pointer  ">
               <h6>About us</h6>

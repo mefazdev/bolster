@@ -7,6 +7,7 @@
   width: 100%;
   z-index: 100;
   background-color: #fff;
+  /* background-color: black   */
 }
 .navbar p{
   cursor: pointer;
@@ -49,6 +50,14 @@
   }
 }
 
+.logo__text{
+  /* border: solid red; */
+  max-width: 220px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
 .logo {
   max-width: 200px;
   /* border: solid green; */

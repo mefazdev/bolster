@@ -44,7 +44,7 @@ export default function We() {
         <div className="we__content ">
           <div>
             <div className="we__sub">
-              <h2>Think tanks</h2>
+              <h2>Think tank</h2>
             </div>
             <div className="we__row grid gap-6 grid-cols-2   lg:grid-cols-5">
               <div
