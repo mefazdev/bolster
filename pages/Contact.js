@@ -17,7 +17,7 @@ export default function Contact() {
   const [name, setName] = useState('')
   const [email,setEmail] = useState('')
   const [message,setMessage] = useState('')
-  const [phone , setPhone] = useState()
+  const [phone , setPhone] = useState('')
   const [sending, setSending] = useState(false)
   const [verified, setVerified ]= useState(false)
       
@@ -26,37 +26,54 @@ export default function Contact() {
    email : email,
    phone : phone,
    message : message,
-   mailSent: false,
-  error: null
+  //  mailSent: false,
+  // error: null
 
  }  
  
 
- const API_PATH = 'https://bolster-amber.vercel.app/api/index';
- const send = async (e)=>{
-  e.preventDefault();
-  axios({
-    method: 'post',
-    url: `${API_PATH}`,
-    headers: { 'content-type': 'application/json' },
-    data: data
-  })
-    .then(result => {
-      // this.setState({
-      //   mailSent: result.data.sent
-      // })
-      console.log('result >>>',result)
-    }
+//  const API_PATH = 'https://bolster-amber.vercel.app/api/index';
+//  const send = async (e)=>{
+//   e.preventDefault();
+//   axios({
+//     method: 'post',
+//     url: `${API_PATH}`,
+//     headers: { 'content-type': 'application/json' },
+//     data: data
+//   })
+//     .then(result => {
+//       // this.setState({
+//       //   mailSent: result.data.sent
+//       // })
+//       console.log('result >>>',result)
+//     }
     
-    )
-    .catch(
-      // error => this.setState({ error: error.message })
-      console.log('error found ==>>')
-      );
+//     )
+//     .catch(
+//       // error => this.setState({ error: error.message })
+//       console.log('error found ==>>')
+//       );
 
-  await console.log(data)
+//   // await console.log(data)
+//   setSending(false)
+//  }
+
+
+const send = async (e)=>{
+
+  e.preventDefault()
+  setSending(true)
+  fetch('/api/mail', { 
+    method:'post',
+    body:JSON.stringify(data)
+   
+  }) 
   setSending(false)
- }
+  setName('')
+  setEmail('')
+  setPhone('')
+  setMessage('')
+}
 
   return (
     <div>
@@ -136,13 +153,14 @@ export default function Contact() {
 
               <div>
                 <form
-                action="#"
-                  // onSubmit={sendForm}
+                // action="#"
+                  onSubmit={send}
                   className="grid grid-cols-1"
                 >
                   <input
                     required
                     name="name"
+                    value={name}
                     placeholder="Name"
                     onChange={(e)=>setName(e.target.value)}
                   />
@@ -150,6 +168,7 @@ export default function Contact() {
                     required
                     name="email"
                     type="email"
+                    value={email}
                     placeholder="Email"
                     onChange={(e)=>setEmail(e.target.value)}
                   />
@@ -177,6 +196,7 @@ export default function Contact() {
 
                   <textarea
                     name="message"
+                    value={message}
                     placeholder="Message"
                     onChange={(e)=>setMessage(e.target.value)}
                   />
@@ -184,16 +204,15 @@ export default function Contact() {
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                onChange={()=>setVerified(true)}
              /> */}
-                
-                </form>
                 <button
                 style={{width:'100%'}}
-                  // disabled={!verified}  type='submit'
-                  onClick={send}
+                type='submit'
                   >
-                    {/* SEND` */}
+                    
                     {sending ? "SENDING..." :'SEND'}  
                   </button>
+                </form>
+                
               </div>
             </div>
           </div>
@@ -204,3 +223,8 @@ export default function Contact() {
     </div>
   );
 }
+
+
+
+// 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
+// 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

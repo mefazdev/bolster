@@ -41,8 +41,8 @@ export default function Navbar() {
     <div className="navbar">
       <div className="nav__content ">
         <div className="nav__container flex">
-          <div className="logo__text">
-            <Image src={logoText}/>
+          <div className="logo__text" style={{cursor:'pointer'}}>
+          <Link href="/"><Image src={logoText}/></Link>
           </div>
           {/* <div className="logo flex">
             <Link href="/">

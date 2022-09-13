@@ -87,6 +87,18 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      <div className="footer__bottom">
+         <h4>All rights reserved. Developed by <a href="whatsapp://send?phone=+918606256402" data-action="share/whatsapp/share"   >
+              {/* <p style={{textDecoration:'underline',cursor:'pointer'}} className="ml-2"> */}
+                
+               <span style={{textDecoration:'underline',color:"#fff"}}>Booreact</span>
+                 
+               
+             {/* </p> */}
+  </a>
+         </h4>
+      </div>
     </div>
   );
 }

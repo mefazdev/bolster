@@ -2,7 +2,7 @@
     font-family: 'Poppins', sans-serif;
     
     padding-top: 40px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
     background-color: black;
    
@@ -122,4 +122,17 @@ color: rgb(83, 80, 80);
     /* background-color: rgba(0, 0, 0, 0.144); */
     /* background-color: rgba(0, 0, 0, 0.322); */
 }
+}
+
+.footer__bottom{
+    /* height: 60px; */
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.42);
+    /* background: transparent linear-gradient(369deg, rgba(24, 24, 18, 0.075) 0%, #1e211232 100%) 0% 0% no-repeat padding-box; */
+   color: rgba(255, 255, 255, 0.863);
+   text-align: center;
+   padding: 15px;
+   font-weight: 400;
+   font-family: 'Heebo',sans-serif;
+   font-size: 15px;
 }

@@ -108,7 +108,7 @@ of society by developing young leaders. */}
       <Footer />
       <Modal
         id="modal"
-        open={open}
+        open={false}
         // onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
