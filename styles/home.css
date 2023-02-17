@@ -1059,26 +1059,31 @@ position: absolute;
   .modal{
       /* border: solid red; */
       width: 100%;
-      max-width: 500px;
+      max-width: 600px;
       margin: auto;
-      height: 400px;
+      /* height: 100%;  */
+    height:500px;
       outline: none;
-    
-      /* background: url('../assets/images/camp.jpeg'); */
-
+ 
       background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../assets/images/camp.jpeg') repeat;
       background-size: cover;
       /* padding: 5px; */
       /* border-radius: 6px; */
       box-shadow: black 0px 7px 29px 0px;
       position: relative;
+      /* background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../assets/images/poster.jpeg') ; */
+   
+      /* background: url('../assets/images/poster.jpeg') ; */
+   overflow: hidden ;
   }
 .modal__footer{
     background-color: rgba(0, 0, 0, 0.589);
     /* height: 50px; */
     width: 100%;
+
     position: absolute;
     bottom: 0;
+    overflow: hidden;
     padding: 15px;
 }
 

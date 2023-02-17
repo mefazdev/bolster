@@ -80,7 +80,7 @@ export default function MainBanner() {
           <div className="camp__ad">
             <h3>Bolster Summer Camp</h3>
             <div className="ad__button__div">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScZUOZOCWbbri_8Kd_xfTZizVPJAUG1soCbouvUhJSP4fX85Q/viewform?usp=pp_url">
+              <a href="https://docs.google.com/forms/d/1pozjGK8Nc8l3mpCdsFkN8SlvL6LcVm6FaOi4jkba-ws/edit?pli=1">
                 <button>REGISTER NOW</button>
               </a>
             </div>

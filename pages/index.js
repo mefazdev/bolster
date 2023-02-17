@@ -108,7 +108,7 @@ of society by developing young leaders. */}
       <Footer />
       <Modal
         id="modal"
-        open={false}
+        open={open}
         // onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
@@ -120,8 +120,9 @@ of society by developing young leaders. */}
           <div className="modal__footer">
             <h3>Bolster Summer Camp</h3>
             <div className="modal__footer__div">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScZUOZOCWbbri_8Kd_xfTZizVPJAUG1soCbouvUhJSP4fX85Q/viewform?usp=pp_url">
+              <a href="https://docs.google.com/forms/d/1pozjGK8Nc8l3mpCdsFkN8SlvL6LcVm6FaOi4jkba-ws/edit?pli=1">
                 <button>REGISTER NOW</button>
+                
               </a>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import Image from "next/image";
+ import Image from "next/image";
 import logo from "../assets/images/logo.png";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Link from "next/link";
