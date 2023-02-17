@@ -130,9 +130,8 @@ const send = async (e)=>{
                   <FacebookIcon className=" contact__social__icons transform motion-safe:hover:scale-110  ... " />
                 </a>
 
-//                 <a href="https://twitter.com/cleverkingsinfo">
-                  <TwitterIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
-//                 </a>
+                <a href="https://twitter.com/cleverkingsinfo">
+                  <TwitterIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />           </a>
 
                 <a href="https://www.youtube.com/@BolsterFoundation">
                   <YouTubeIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
