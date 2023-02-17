@@ -24,7 +24,7 @@ export default function Home() {
     return new Promise((res) => setTimeout(res, delay));
   }
   const controlOpen = async () => {
-    await timeout(6000);
+    await timeout(2000);
     setOpen(true);
   };
   useEffect(() => {

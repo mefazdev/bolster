@@ -1064,8 +1064,9 @@ position: absolute;
       /* height: 100%;  */
     height:500px;
       outline: none;
- 
-      background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../assets/images/camp.jpeg') repeat;
+ background: url('../assets/images/poster.jpeg') ;
+
+      /* background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../assets/images/camp.jpeg') repeat; */
       background-size: cover;
       /* padding: 5px; */
       /* border-radius: 6px; */
