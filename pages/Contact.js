@@ -126,25 +126,23 @@ const send = async (e)=>{
               </div>
               <div className="contact__social">
                 <h3>Follow Us</h3>
-                <a href="https://www.facebook.com/cleverkingsgroup/">
+                <a href="https://www.facebook.com/bolsterfoundation">
                   <FacebookIcon className=" contact__social__icons transform motion-safe:hover:scale-110  ... " />
                 </a>
 
-                <a href="https://twitter.com/cleverkingsinfo">
+//                 <a href="https://twitter.com/cleverkingsinfo">
                   <TwitterIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
-                </a>
+//                 </a>
 
-                <a href="">
+                <a href="https://www.youtube.com/@BolsterFoundation">
                   <YouTubeIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
                 </a>
 
-                <a href="https://instagram.com/cleverkingsofficial?utm_medium=copy_link">
+                <a href="https://instagram.com/bolsterfoundation?igshid=OGQ2MjdiOTE=">
                   <InstagramIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
                 </a>
 
-                <a href="https://www.linkedin.com/company/cleverkings/">
-                  <LinkedInIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
-                </a>
+               
               </div>
             </div>
             {/*<<<<<<<<<<<<<<<<<<<<< CONTACT FROM >>>>>>>>>>>>>>>>>>>> */}
