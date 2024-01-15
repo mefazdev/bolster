@@ -41,9 +41,9 @@ export default function Programmes() {
             </a>
           </div>
         </div>
-        <div className="prgm__content__row gap-5 grid lg:grid-cols-3">
+        <div className="mt-10 gap-5 grid lg:grid-cols-3">
           <Link href="/Buddy">
-            <div className="prgm__content__row__box">
+            <div className="prgm__content__row__box rounded shadow-md cursor-pointer hover:-translate-y-1 transition ease-linear duration-200 hover:scale-105">
               <div className="prgm__row__caption">
                 <h3> Bolster Buddy </h3>
               </div>
@@ -51,7 +51,7 @@ export default function Programmes() {
           </Link>
 
           <Link href="/Career">
-            <div className="prgm__content__row__box__two">
+            <div className="prgm__content__row__box__two rounded shadow-md cursor-pointer hover:-translate-y-1 transition ease-linear duration-200 hover:scale-105">
               <div className="prgm__row__caption">
                 <h3>Bolster Career Solutions</h3>
               </div>
@@ -59,7 +59,7 @@ export default function Programmes() {
           </Link>
 
           <Link href="/MeTime">
-            <div className="prgm__content__row__box__three">
+            <div className="prgm__content__row__box__three rounded shadow-md cursor-pointer hover:-translate-y-1 transition ease-linear duration-200 hover:scale-105">
               <div className="prgm__row__caption">
                 <h3> Me Time </h3>
               </div>
@@ -68,23 +68,17 @@ export default function Programmes() {
         </div>
         <div className="prgm__content__row gap-5 grid lg:grid-cols-3">
           <Link href="/Skilling">
-            <div className="prgm__content__row__box__four">
+            <div className="prgm__content__row__box__four rounded shadow-md cursor-pointer hover:-translate-y-1 transition ease-linear duration-200 hover:scale-105">
               <div className="prgm__row__caption">
                 <h3>Bolster Skilling</h3>
               </div>
             </div>
           </Link>
 
-          <Link href="/Madrasa">
-            <div className="prgm__content__row__box__five">
-              <div className="prgm__row__caption">
-                <h3>Madrassa Development</h3>
-              </div>
-            </div>
-          </Link>
+        
 
           <Link href="/Cariculum">
-            <div className="prgm__content__row__box__six">
+            <div className="prgm__content__row__box__six rounded shadow-md cursor-pointer hover:-translate-y-1 transition ease-linear duration-200 hover:scale-105">
               <div className="prgm__row__caption">
                 <h3> Bolster Summer Camps</h3>
               </div>

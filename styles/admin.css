@@ -1,5 +1,5 @@
 .admin__nav{
-    background-color: black;
+    /* background-color: black; */
     height: 70px;
     position: fixed;
     width: 100%;
@@ -55,9 +55,7 @@ border-radius: 10px;
     justify-content: space-between;
     margin: auto;
 }
-.res__dash{
-
-}
+ 
 .res__table__header{
     /* border: solid red; */
     width: 100%;
@@ -238,7 +236,7 @@ margin-top: 20px;
 }
 
 .admin__add button{
-    background-color: rgb(18, 18, 170);
+    /* background-color: rgb(18, 18, 170); */
     color: #fff;
     width: 100px;
     padding: 3px;
@@ -249,10 +247,11 @@ margin-top: 20px;
     height: 200px;
    
     margin-top: 100px;
-    max-width: 300px;
-    background-color: rgb(233, 233, 233);
+    /* max-width: 300px; */
+    /* background-color: rgb(233, 233, 233); */
 
-max-width: 300px;}
+/* max-width: 300px; */
+}
 
 .link__modal__row{
    padding-top: 50px;
@@ -263,14 +262,14 @@ max-width: 300px;}
 .link__modal__row input{
     margin-left: 10px;
 }
-.add__modal button{
+.add__modal butto{
     margin: auto;
     background-color: rgb(65, 65, 243);
    
     margin-top: 20px;
     width: 100%;
     max-width: 100px;
-    float: right;
+    /* float: right; */
     margin-right: 30px;
     color: #FFF;
 }

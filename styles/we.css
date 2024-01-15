@@ -1,16 +1,18 @@
 .we{
    
-
+  font-family: 'Poppins', sans-serif;
     padding-top: 70px;
     background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
     /* background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box; */
 }
 .we__main{
-    background: url('../assets/images/bolster.jpg');
+  /* background: url('https://scontent.fcok10-2.fna.fbcdn.net/v/t39.30808-6/282025138_3112192425689570_7034884842598609671_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=BX33PSwfylYAX9S_bBG&_nc_ht=scontent.fcok10-2.fna&oh=00_AfAQQIfltqtGuMgxqKKHM21uELfA2SnkEhqgyJ3cjDCyWw&oe=65AAC0E8'); */
+    /* background: url('../assets/images/bolster.jpg'); */
+    background: url('../assets/images/we-bg.jpg');
     height: 400px;
     position: relative;
     background-size: cover;
-    background-position: center;
+    background-position:center;
 }
 .we__main h1{
     font-family: 'Poppins', sans-serif;
@@ -41,11 +43,11 @@ padding-bottom: 150px;
   margin-top: 10px;
 }
   .we__item{
-    padding: 13px;
+    /* padding: 13px; */
    /* border: solid 1px rgba(128, 128, 128, 0.287);
    background-color: #fff; */
     /* height: 300px; */
-    max-height: 255px;
+    /* max-height: 255px; */
    /* background-color: rgba(0, 0, 0, 0.904); */
     overflow: hidden;
     max-width: 230px;
@@ -64,17 +66,13 @@ padding-bottom: 150px;
     max-height: 100%;
     /* overflow-y: scroll; */
   }
-  .we__item:hover{
-    transform: scale(1.01); 
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-   
-  }
+  
 
   .we__item h6{
     color: rgb(66, 63, 63);
     /* color: #fff; */
     /* background-color: rgb(201, 202, 118); */
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
   }

@@ -160,7 +160,7 @@ font-size: 18px;
     padding-bottom: 50px;
     /* border: saddlebrown  solid; */
     margin-top: 50px;
-  
+    font-family: 'Poppins', sans-serif;
     /* height: 400px; */
     background-color:rgba(201, 202, 118, 0.137);
     background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
@@ -323,42 +323,9 @@ background-size: cover;
 position: relative;
 height: 230px;
 }
-.prgm__content__row__box:hover{
-    opacity: 1;
-    transform: scale(1.01); 
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+ 
    
-  }
-  .prgm__content__row__box__two:hover{
-    opacity: 1;
-    transform: scale(1.01); 
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-   
-  }
-  .prgm__content__row__box__three:hover{
-    opacity: 1;
-    transform: scale(1.01); 
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-   
-  }
-  .prgm__content__row__box__four:hover{
-    opacity: 1;
-    transform: scale(1.01); 
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-   
-  }
-  .prgm__content__row__box__five:hover{
-    opacity: 1;
-    transform: scale(1.01); 
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-   
-  }
-  .prgm__content__row__box__six:hover{
-    opacity: 1;
-    transform: scale(1.01); 
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-   
-  }
+  
 /* <<<<<<<<<< GET INVOLV >>>>>>>>>>> */
 
 .hm__involve{
@@ -408,12 +375,12 @@ margin: auto;
        display: flex;
        background-color: #fff;
        flex-direction: column;
-       box-shadow: 2px 3px 12px 1px rgb(182, 173, 173) ;
+       /* box-shadow: 2px 3px 12px 1px rgb(182, 173, 173) ; */
    }
-   .hm__involve__box:hover{
+   /* .hm__involve__box:hover{
 opacity: .9;
     box-shadow: 2px 5px 5px 5px rgb(255, 255, 255) ;
-   }
+   } */
    #involve__icon{
        font-size: 100px;
        color: rgb(41, 41, 39);
@@ -885,11 +852,7 @@ padding-bottom: 30px;
 
 
 
-.slider{
-    /* background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
-    background-color: black;
-    padding-top: 20px; */
-}
+ 
   .slider__item__one{
   position: relative;
       height: 300px;
@@ -1045,9 +1008,7 @@ position: absolute;
     margin-top: 40px;
     padding: 15px;
     }
-    .embed__row{
-    
-    }
+     
   }
 
   #modal{

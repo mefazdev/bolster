@@ -13,7 +13,7 @@ export default function Involve() {
         </div>
         <div className="hm__involve__row gap-10 grid lg:grid-cols-4">
           <Link href="/Contact">
-            <div className="hm__involve__box">
+            <div className="hm__involve__box shadow-xl hover:-translate-y-1 hover:scale-105 transition ease-linear duration-200 ">
               <HailIcon id="involve__icon" />
               <div className="involve__icon__caption">
                 <h4>Partner with us</h4>
@@ -22,7 +22,7 @@ export default function Involve() {
           </Link>
 
           <Link href="/Contact">
-            <div className="hm__involve__box">
+            <div className="hm__involve__box shadow-xl hover:-translate-y-1 hover:scale-105 transition ease-linear duration-200">
               <VolunteerActivismIcon id="involve__icon" />
               <div className="involve__icon__caption">
                 <h4>Volunteering</h4>
@@ -31,7 +31,7 @@ export default function Involve() {
           </Link>
 
           <Link href="/Contact">
-            <div className="hm__involve__box">
+            <div className="hm__involve__box shadow-xl hover:-translate-y-1 hover:scale-105 transition ease-linear duration-200">
               <WorkIcon id="involve__icon" />
               <div className="involve__icon__caption">
                 <h4>Openings</h4>
@@ -40,7 +40,7 @@ export default function Involve() {
           </Link>
 
           <Link href="/Contact">
-            <div className="hm__involve__box">
+            <div className="hm__involve__box shadow-xl hover:-translate-y-1 hover:scale-105 transition ease-linear duration-200">
               <AccountTreeIcon id="involve__icon" />
               <div className="involve__icon__caption">
                 <h4>Internship</h4>

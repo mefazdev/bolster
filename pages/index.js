@@ -28,7 +28,7 @@ export default function Home() {
     setOpen(true);
   };
   useEffect(() => {
-    controlOpen();
+    // controlOpen();
   }, []);
   return (
     <div>
