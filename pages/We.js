@@ -16,7 +16,7 @@ import mujeebs from "../assets/images/team/mujeeb.jpeg";
  
 import jalals from "../assets/images/team/jalal.jpeg";
 import ibrahim from "../assets/images/team/ibrahim.jpeg";
-import abdu from "../assets/images/team/abdu.JPEG";
+import abdu from "../assets/images/team/abdu.jpeg";
 import vajid from "../assets/images/team/vajid.jpeg";
 import shafeeq from "../assets/images/team/shafeeq.jpeg";
 import Image from "next/image";
