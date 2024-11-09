@@ -4,13 +4,14 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 
 import { useEffect, useState } from "react";
-import cookies from "js-cookie";
+ 
 import axios from "axios";
 import moment from "moment";
-import { parseCookies } from "./api/parseCookies";
+ 
 import ReactMarkdown from "react-markdown";
 
 import Head from "next/head";
+import Image from "next/image";
 export default function Blog({ initailValue }) {
   const slug = initailValue;
 
@@ -31,7 +32,7 @@ export default function Blog({ initailValue }) {
   };
 
   const handleClick = async (id) => {
-    await cookies.set("blogId", id);
+    cookies.set("blogId", id);
     axios
       .get(`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/blogs?slug=${slug}`)
 
@@ -72,7 +73,7 @@ export default function Blog({ initailValue }) {
               {moment(blog.date).format("MMM DD YYYY")} | {blog.author}
             </h6>
             <div className="blogMore__img">
-              <img src={blog.image ? `${blog.image.url}` : ""} />
+              <Image alt="" src={blog.image ? `${blog.image.url}` : ""} />
             </div>
             <p>
               <ReactMarkdown>{blog.content}</ReactMarkdown>
@@ -90,7 +91,7 @@ export default function Blog({ initailValue }) {
                   className="blog__box pt-5  gap-10 grid lg:grid-cols-3"
                 >
                   <div className="">
-                    <img src={`${data.thumbnail.url}`} />{" "}
+                    <Image src={`${data.thumbnail.url}`} alt=""/> {" "}
                   </div>
                   <div className="lg:col-span-2">
                     <h2>{data.title}</h2>
@@ -101,7 +102,7 @@ export default function Blog({ initailValue }) {
                       <ReactMarkdown>{content}</ReactMarkdown>
                     </p>
 
-                    <Link href="/Blog">
+                    <Link href="/Blog" passHref>
                       <button
                         value={data.slug}
                         onClick={(e) => handleClick(e.target.value)}
@@ -122,9 +123,9 @@ export default function Blog({ initailValue }) {
   );
 }
 
-Blog.getInitialProps = ({ req }) => {
-  const cookies = parseCookies(req);
-  return {
-    initailValue: cookies.blogId,
-  };
-};
+// Blog.getInitialProps = ({ req }) => {
+//   const cookies = parseCookies(req);
+//   return {
+//     initailValue: cookies.blogId,
+//   };
+// };

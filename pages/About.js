@@ -8,7 +8,7 @@ import Head from "next/head";
 export default function About() {
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>Bolster Foundation</title>
         
         <meta
@@ -18,7 +18,7 @@ export default function About() {
         <meta property="og:title" content="Home" key="title" />
         <link rel="canonical" href="https://www.bolsterfoundation.in" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> */}
       <Navbar />
       <div className="about" style={{scrollBehavior:'smooth'}}>
         <div className="about__main">

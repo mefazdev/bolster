@@ -5,7 +5,7 @@
 }
  
 .cariculum__main{
-    background: url('../assets/images/camp.jpeg');
+    background: url('../public/assets/images/camp.jpeg');
     height:400px;
     position: relative;
     background-size: cover;

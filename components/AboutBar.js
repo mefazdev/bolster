@@ -3,19 +3,19 @@ import Link from "next/link";
 export default function AboutBar() {
   return (
     <div className="about__bar">
-      <Link href="/About">
+      <Link href="/About" passHref>
         <div className="about__bar__row">
           <h6>About Bolster</h6>
         </div>
       </Link>
 
-      <Link href="/Vision">
+      <Link href="/Vision" passHref>
         <div className="about__bar__row">
           <h6>Vision, Mission and Values</h6>
         </div>
       </Link>
 
-      <Link href="/We">
+      <Link href="/We" passHref>
         <div className="about__bar__row">
           <h6>Who we are</h6>
         </div>

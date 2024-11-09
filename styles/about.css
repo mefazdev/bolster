@@ -4,7 +4,7 @@
 
   }
 .about__main{
-    background: url('../assets/images/scroll-2.jpg');
+    background: url('../public/assets/images/scroll-2.jpg');
     height:400px;
     position: relative;
     background-size: cover;
@@ -12,13 +12,13 @@
 }
 .about__main__head h1{
     font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 26px;
 color: #fff;
 }
 .about__main__head{
     position: absolute; bottom: 20px; 
   background-color: rgba(0, 0, 0, 0.781);
-    margin-left: 50px;
+    margin-left: 100px;
     padding: 15px;
     /* background-color:rgba(184, 185, 106, 0.63); */
 }

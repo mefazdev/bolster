@@ -2,10 +2,10 @@ import React from "react";
 import Carousel from "react-material-ui-carousel";
 export default function Slider() {
   return (
-    <div className="slider">
+    <div className="slider mt-24">
       <Carousel
         autoPlay={true}
-        interval={2000}
+        interval={3000}
         //   duration={2000}
         swipe={true}
         indicators={false}

@@ -6,7 +6,8 @@ import Navbar from "../components/Navbar";
 import axios from "axios";
 import moment from "moment";
 
-import cookies from "js-cookie";
+// import cookies from "js-cookie";
+import Image from "next/image";
 export default function Blogs() {
   const [blog, setBlog] = useState([]);
   const [showMore, setShowMore] = useState(false);
@@ -25,7 +26,7 @@ export default function Blogs() {
   };
 
   useEffect(() => {
-    fetchData();
+    // fetchData();
   }, []);
   return (
     <div>
@@ -52,7 +53,7 @@ export default function Blogs() {
                 className="blog__box gap-5 lg:gap-10 grid lg:grid-cols-3"
               >
                 <div className="">
-                  <img src={data.thumbnail.url} />
+                  <Image src={data.thumbnail.url} alt=""/>
                 </div>
                 <div className="lg:col-span-2">
                   <h2>{data.title}</h2>
@@ -61,7 +62,7 @@ export default function Blogs() {
                   </h3>
                   <p id="desk__p">{content}</p>
 
-                  <Link href="/Blog">
+                  <Link href="/Blog" passHref>
                     <button
                       onClick={() => cookies.set("blogId", data.slug)}
                       id="blog__list__button"

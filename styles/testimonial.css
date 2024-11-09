@@ -36,7 +36,7 @@
     color: #000;
     clear: both;
     line-height: 18px;
-    font-size: 15px;
+    /* font-size: 15px; */
     padding: 8px;
     position: relative;
     margin: 8px 0;
@@ -114,7 +114,7 @@
     border-radius: 0px 5px 5px 5px;
     /* float: left;  */
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    /* font-size: 17px; */
     padding: 20px;
     padding-bottom: 10px;
 /* z-index: 100; */

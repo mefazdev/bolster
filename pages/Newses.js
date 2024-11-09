@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 export default function Newses() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
 
       <div className="blogs">
         <div className="blogs__main">
@@ -81,7 +81,7 @@ export default function Newses() {
         </div>
       </div>
 
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

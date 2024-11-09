@@ -31,33 +31,7 @@ export default function Contact() {
 
  }  
  
-
-//  const API_PATH = 'https://bolster-amber.vercel.app/api/index';
-//  const send = async (e)=>{
-//   e.preventDefault();
-//   axios({
-//     method: 'post',
-//     url: `${API_PATH}`,
-//     headers: { 'content-type': 'application/json' },
-//     data: data
-//   })
-//     .then(result => {
-//       // this.setState({
-//       //   mailSent: result.data.sent
-//       // })
-//       console.log('result >>>',result)
-//     }
-    
-//     )
-//     .catch(
-//       // error => this.setState({ error: error.message })
-//       console.log('error found ==>>')
-//       );
-
-//   // await console.log(data)
-//   setSending(false)
-//  }
-
+ 
 
 const send = async (e)=>{
 
@@ -156,14 +130,14 @@ const send = async (e)=>{
                 >
                   <input
                     required
-                    name="name"
+                    
                     value={name}
                     placeholder="Name"
                     onChange={(e)=>setName(e.target.value)}
                   />
                   <input
                     required
-                    name="email"
+                 
                     type="email"
                     value={email}
                     placeholder="Email"
@@ -172,35 +146,22 @@ const send = async (e)=>{
                   {/* <div className='contact__phone__input'> */}
                   <input 
                   required
-                   name="Phone"
+                  //  name="Phone"
                    placeholder="Phone" 
                   className='pl-2'
                   value={phone}
                   onChange={(e)=>setPhone(e.target.value    )}
                   
                   />
-                  {/* <PhoneInput  
-              name='phone'
-               className='pl-2'
-               placeholder="Phone"
-              //  value={phone}
-              //  onChange={setPhone}
-               required
-               defaultCountry='IN'
-               
-               /> */}
-                  {/* </div>  */}
+                   
 
                   <textarea
-                    name="message"
+                    // name="message"
                     value={message}
                     placeholder="Message"
                     onChange={(e)=>setMessage(e.target.value)}
                   />
-                  {/* <ReCAPTCHA className='mt-3'
-                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-               onChange={()=>setVerified(true)}
-             /> */}
+                  
                 <button
                 style={{width:'100%'}}
                 type='submit'

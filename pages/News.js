@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 export default function News() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <div className="blog" style={{scrollBehavior:'smooth'}}>
         <div className="blogs__main">
           <div className="about__main__head">
@@ -107,7 +107,7 @@ export default function News() {
         </div>
       </div>
 
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }

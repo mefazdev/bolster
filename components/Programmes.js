@@ -1,7 +1,32 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 export default function Programmes() {
+  const docs = [
+    
+    {
+      name: "Bolster Buddy",
+      image: "/assets/images/buddy.jpg",
+      link: "/Buddy",
+    },
+    {
+      name: "Bolster Career Solutions",
+      image: "/assets/images/career.jpg",
+      link: "/Career",
+    },
+    { name: "Me Time", image: "/assets/images/me-time.jpg", link: "/MeTime" },
+    {
+      name: "Bolster Skilling",
+      image: "/assets/images/skill.jpg",
+      link: "/Skilling",
+    },
+    {
+      name: "Bolster Summer Camp",
+      image: "/assets/images/camp.jpeg",
+      link: "/Cariculum",
+    },
+  ];
   return (
     <div className="h__prgm">
       <div className="h__prgm__content">
@@ -41,50 +66,34 @@ export default function Programmes() {
             </a>
           </div>
         </div>
-        <div className="mt-10 gap-5 grid lg:grid-cols-3">
-          <Link href="/Buddy">
-            <div className="prgm__content__row__box rounded shadow-md cursor-pointer hover:-translate-y-1 transition ease-linear duration-200 hover:scale-105">
-              <div className="prgm__row__caption">
-                <h3> Bolster Buddy </h3>
-              </div>
-            </div>
-          </Link>
+        <div className="mt-6 lg:mt-20 gap-5 grid lg:grid-cols-3">
+         
+         
+        {docs.map((d) =>
+             
+                <Link key={d.name} href={d.link} passHref className='cursor-pointer h-[250px] w-full'>
+                  <div
+                    key={d.name}
+                    className="relative h-[250px] w-full   shadow-2xl rounded-lg cursor-pointer"
+                  >
+                    <Image
+                      src={d.image}
+                      className="object-cover rounded-lg"
+                      layout="fill"
+                      alt=""
+                    />
+                    <div className="programmes__caption rounded-b-lg">
+                      <h3 className="ml-2">{d.name}</h3>
+                    </div>
+                  </div>
+                </Link>
+              
+            )}
+          
 
-          <Link href="/Career">
-            <div className="prgm__content__row__box__two rounded shadow-md cursor-pointer hover:-translate-y-1 transition ease-linear duration-200 hover:scale-105">
-              <div className="prgm__row__caption">
-                <h3>Bolster Career Solutions</h3>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/MeTime">
-            <div className="prgm__content__row__box__three rounded shadow-md cursor-pointer hover:-translate-y-1 transition ease-linear duration-200 hover:scale-105">
-              <div className="prgm__row__caption">
-                <h3> Me Time </h3>
-              </div>
-            </div>
-          </Link>
+          
         </div>
-        <div className="prgm__content__row gap-5 grid lg:grid-cols-3">
-          <Link href="/Skilling">
-            <div className="prgm__content__row__box__four rounded shadow-md cursor-pointer hover:-translate-y-1 transition ease-linear duration-200 hover:scale-105">
-              <div className="prgm__row__caption">
-                <h3>Bolster Skilling</h3>
-              </div>
-            </div>
-          </Link>
-
-        
-
-          <Link href="/Cariculum">
-            <div className="prgm__content__row__box__six rounded shadow-md cursor-pointer hover:-translate-y-1 transition ease-linear duration-200 hover:scale-105">
-              <div className="prgm__row__caption">
-                <h3> Bolster Summer Camps</h3>
-              </div>
-            </div>
-          </Link>
-        </div>
+      
       </div>
     </div>
   );

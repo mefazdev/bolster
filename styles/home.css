@@ -9,7 +9,7 @@ position: relative;
 .main__banner{
     /* background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Prayer_in_Cairo_1865.jpg/1200px-Prayer_in_Cairo_1865.jpg'); */
     height:400px;
-    background: url('../assets/images/scroll.jpeg');
+    background: url('../public/assets/images/scroll.jpeg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;    
@@ -39,7 +39,7 @@ position: relative;
 .main__banner__three{
     /* background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Prayer_in_Cairo_1865.jpg/1200px-Prayer_in_Cairo_1865.jpg'); */
     height:400px;
-    background: url('../assets/images/bolster.jpg');
+    background: url('../public/assets/images/bolster.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;    
@@ -52,7 +52,7 @@ position: relative;
 }
 .main__banner__four{
     height:400px;
-    background: url('../assets/images/scroll-2.jpg');
+    background: url('../public/assets/images/scroll-2.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;    
@@ -100,7 +100,7 @@ position: relative;
 height: 210px;
    /* margin-top: 15px; */
  /* border: solid red; */
- background: url('../assets/images/scroll-2.jpg');
+ background: url('../public/assets/images/scroll-2.jpg');
  background-repeat: no-repeat;
  background-size: cover;
  background-position: bottom;
@@ -194,7 +194,7 @@ padding: 20px;
 }
 .prgm__content__main__left{
     /* border: solid red; */
-    background-image: url('../assets/images/campus.jpg');
+    background-image: url('../public/assets/images/campus.jpg');
     min-height: 250px;
     background-repeat: no-repeat;
     position: relative;
@@ -288,37 +288,37 @@ margin-top: 15px;
   
 }
 .prgm__content__row__box{
-    background-image: url('../assets/images/buddy.jpg');
+    background-image: url('../public/assets/images/buddy.jpg');
 background-size: cover;
 height: 230px;
 }
 .prgm__content__row__box__two{
-    background-image: url('../assets/images/career.jpg');
+    background-image: url('../public/assets/images/career.jpg');
 background-size: cover;
 position: relative;
 height: 230px;
 }
 .prgm__content__row__box__three{
-    background-image: url('../assets/images/me-time.jpg');
+    background-image: url('../public/assets/images/me-time.jpg');
 background-size: cover;
 position: relative;
 height: 230px;
 }
 .prgm__content__row__box__four{
-    background-image: url('../assets/images/skill.jpg');
+    background-image: url('../public/assets/images/skill.jpg');
 background-size: cover;
 position: relative;
 height: 230px;
 }
 .prgm__content__row__box__five{
-    background-image: url('../assets/images/madrasa.jpeg');
+    background-image: url('../public/assets/images/madrasa.jpeg');
 background-size: cover;
 position: relative;
 height: 230px;
 }
 .prgm__content__row__box__six{
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.911)), url("../assets/images/cari.jpeg"); */
-    background-image: url('../assets/images/camp.jpeg');
+    background-image: url('../public/assets/images/camp.jpeg');
 background-size: cover;
 position: relative;
 height: 230px;
@@ -857,7 +857,7 @@ padding-bottom: 30px;
   position: relative;
       height: 300px;
       width: 100%;
-      background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../assets/images/edu.jpg') repeat;
+      background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../public/assets/images/edu.jpg') repeat;
            /* background-image: url('../assets/images/edu.JPG'); */
       background-size: cover;
       background-attachment: fixed;
@@ -901,7 +901,7 @@ padding-bottom: 30px;
     /* display: flex;x */
     height: 300px;
     width: 100%;
-    background: linear-gradient( rgba(1, 10, 14, 0.418), rgba(1, 10, 14, 0.712)), url('../assets/images/hands.jpg') repeat;
+    background: linear-gradient( rgba(1, 10, 14, 0.418), rgba(1, 10, 14, 0.712)), url('../public/assets/images/hands.jpg') repeat;
 /* background-image: url('../assets/images/hands.jpg'); */
 background-attachment: fixed;
 background-size: cover;
@@ -915,7 +915,7 @@ background-position: center;
     height: 300px;
     /* display: flex; */
     align-items: center;
-    background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../assets/images/leads.jpg') repeat;
+    background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../public/assets/images/leads.jpg') repeat;
     /* background-image: url('../assets/images/leads.jpg'); */
 
     background-size: cover;
@@ -1025,7 +1025,7 @@ position: absolute;
       /* height: 100%;  */
     height:500px;
       outline: none;
- background: url('../assets/images/poster.jpeg') ;
+ background: url('../public/assets/images/poster.jpeg') ;
 
       /* background: linear-gradient( rgba(2, 20, 26, 0.13), rgba(1, 10, 14, 0.5)), url('../assets/images/camp.jpeg') repeat; */
       background-size: cover;

@@ -5,7 +5,7 @@
 }
 
 .do__main{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.911)), url("../assets/images/pg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.911)), url("../public/assets/images/pg.jpg");
     /* background: url('../assets/images/pg.jpg'); */
     height:400px;
     position: relative;
@@ -48,7 +48,7 @@ color: #fff;
     height: 300px;
     background-size: cover;
     background-position: bottom;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.911)), url("../assets/images/madrasa.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.911)), url("../public/assets/images/madrasa.jpg");
     /* width: 100%; */
     position: relative;
   }
@@ -65,7 +65,7 @@ color: #fff;
     height: 300px;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.911)), url("../assets/images/girls.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.911)), url("../public/assets/images/girls.jpg");
     /* width: 100%; */
     position: relative;
     margin-top: 40px;
@@ -79,7 +79,7 @@ color: #fff;
   }
   
   .do__main{
-      background-image: linear-gradient(rgba(0, 0, 0, 0.246), rgba(0, 0, 0, 0.692)), url("../assets/images/pg.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.246), rgba(0, 0, 0, 0.692)), url("../public/assets/images/pg.jpg");
       
       height:200px;
    

@@ -5,7 +5,7 @@
 }
  
 .madrasa__main{
-    background: url('../assets/images/madrasa.jpeg');
+    background: url('../public/assets/images/madrasa.jpeg');
     height:400px;
     position: relative;
     background-size: cover;

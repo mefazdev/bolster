@@ -2,7 +2,7 @@ import mail from '@sendgrid/mail'
 
 mail.setApiKey(process.env.SENDGRID_API_KEY)
 // process.env.SENDGRID_API_KEY
-export default (req,res)=>{
+const sendMail = (req,res)=>{
     const body = JSON.parse(req.body);
 
     const message   = `
@@ -39,3 +39,6 @@ export default (req,res)=>{
     // )
     res.status(200).json({ status: 'ok'});
 }
+
+
+export default sendMail

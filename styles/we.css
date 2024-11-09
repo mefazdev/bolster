@@ -8,7 +8,7 @@
 .we__main{
   /* background: url('https://scontent.fcok10-2.fna.fbcdn.net/v/t39.30808-6/282025138_3112192425689570_7034884842598609671_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c83dfd&_nc_ohc=BX33PSwfylYAX9S_bBG&_nc_ht=scontent.fcok10-2.fna&oh=00_AfAQQIfltqtGuMgxqKKHM21uELfA2SnkEhqgyJ3cjDCyWw&oe=65AAC0E8'); */
     /* background: url('../assets/images/bolster.jpg'); */
-    background: url('../assets/images/we-bg.jpg');
+    background: url('../public/assets/images/we-bg.jpg');
     height: 400px;
     position: relative;
     background-size: cover;
@@ -131,7 +131,7 @@ background-color: rgb(207, 207, 207);
 } 
 @media only screen and (max-width: 800px) {
   .we__main{
-    background: url('../assets/images/bolster.jpg');
+    background: url('../public/assets/images/bolster.jpg');
     height:200px;
     position: relative;
     background-size: cover;

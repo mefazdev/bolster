@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/images/logo-2.png";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import ApartmentIcon from "@mui/icons-material/Apartment";
@@ -11,54 +10,54 @@ export default function Footer() {
     <div className="footer">
       <div className="footer__content lg:gap-10 grid lg:grid-cols-4">
         <div className="footer__item">
-          <Link href="/">
+          <Link href="/" passHref>
             <h2>Home</h2>
           </Link>
-          <Link href="/About">
+          <Link href="/About" passHref>
             <h2>About</h2>
           </Link>
-          <Link href="/">
+          <Link href="/" passHref>
             <h2>Media</h2>
           </Link>
-          <Link href="/Contact">
+          <Link href="/Contact" passHref>
             <h2>Contact us</h2>
           </Link>
-          <Link href="/WeDo">
+          <Link href="/WeDo" passHref>
             <h2>What we do</h2>
           </Link>
         </div>
 
         <div className="footer__item">
-          <Link href="/">
+          <Link href="/" passHref>
             <h2>Impact</h2>
           </Link>
-          <Link href="/">
+          <Link href="/" passHref>
             <h2>Get involved</h2>
           </Link>
-          <Link href="/Vision">
+          <Link href="/Vision" passHref>
             <h2>Vission</h2>
           </Link>
-          <Link href="/Mision">
+          <Link href="/Mision" passHref> 
             <h2>Mission</h2>
           </Link>
-          <Link href="/We">
+          <Link href="/We" passHref>
             <h2>Who we are</h2>
           </Link>
         </div>
         <div className="footer__item">
-          <Link href="/">
+          <Link href="/" passHref>
             <h2>Milestones</h2>
           </Link>
-          <Link href="/">
+          <Link href="/" passHref>
             <h2>Award & Recogniton</h2>
           </Link>
-          <Link href="/">
+          <Link href="/" passHref>
             <h2>Our Partners</h2>
           </Link>
         </div>
         <div id="footer__adress" className="footer__item">
           <div className="footer__logo">
-            <Image src={logo} />
+            <Image src='/asset/images/logo-2.png' height={14} width={20} alt=""/>
           </div>
           <div className="flex footer__name">
             <ApartmentIcon id="footer__icon" />

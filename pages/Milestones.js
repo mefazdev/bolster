@@ -1,9 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
-import Image from "next/image";
-import AboutBar from "../components/AboutBar";
+ 
 import Head from "next/head";
 export default function Milestones() {
   return (
@@ -20,8 +18,8 @@ export default function Milestones() {
             <h1>Milestones</h1>
           </div>
         </div>
-        <div className="about__content">
-          <div className="m__stone__row">
+        <div className="about__content grid gap-6">
+          <div className=" bg-gray-50 p-4 shadow rounded-lg">
             <div className="m__stone__head">
               <h3>2018 </h3>
             </div>
@@ -31,7 +29,7 @@ export default function Milestones() {
             </p>
           </div>
 
-          <div className="m__stone__row">
+          <div className=" bg-gray-50 p-4 shadow rounded-lg">
             <div className="m__stone__head">
               <h3>2019 June </h3>
             </div>
@@ -42,7 +40,7 @@ export default function Milestones() {
               educational administration
             </p>
           </div>
-          <div className="m__stone__row">
+          <div className=" bg-gray-50 p-4 shadow rounded-lg">
             <div className="m__stone__head">
               <h3>2021 June</h3>
             </div>
@@ -55,7 +53,7 @@ export default function Milestones() {
               sessions
             </p>
           </div>
-          <div className="m__stone__row">
+          <div className=" bg-gray-50 p-4 shadow rounded-lg">
             <div className="m__stone__head">
               <h3>2021 September </h3>
             </div>
@@ -68,7 +66,7 @@ export default function Milestones() {
             </p>
           </div>
 
-          <div className="m__stone__row">
+          <div className=" bg-gray-50 p-4 shadow rounded-lg">
             <div className="m__stone__head">
               <h3>
                 2021 October <br />

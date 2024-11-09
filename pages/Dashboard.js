@@ -13,9 +13,9 @@ import {
   deleteDoc,
 } from "@firebase/firestore";
 import CloseIcon from "@mui/icons-material/Close";
-import { parseCookies } from "./api/parseCookies";
+ 
 import { useRouter } from "next/router";
-import Cookies from "js-cookie";
+import { isAdmin } from '../lib/checkAuth';
 export default function Dashboard({ admin }) {
   const [open, setOpen] = useState(false);
   const [link, setLink] = useState("");
@@ -53,14 +53,20 @@ export default function Dashboard({ admin }) {
     fetchData();
   }, []);
   const adminControll = async () => {
-    Cookies.set("Admin", false);
-    router.push({
-      pathname: "/admin@bf",
-    });
+    // Cookies.set("Admin", false);
+    // router.push({
+    //   pathname: "/admin@bf",
+    // });
+    handleLogout()
+  };
+
+  const handleLogout = async () => {
+    await fetch('/api/logout', { method: 'POST' });
+    router.push('/Login');
   };
   return (
     <div className="pb-36">
-      {admin ? (
+      {/* {admin ? ( */}
         <>
           <div className="admin__nav bg-gray-700">
             <div className="admin__add">
@@ -85,7 +91,7 @@ export default function Dashboard({ admin }) {
                     ></iframe>
                     <div className="flex">
                     <button className="mt-6 bg-red-600 w-full px-4  text-white"
-                      // id="admin__del__button"
+                    
                       value={link.id}
                       onClick={(e) => deletItem(e.target.value)}
                     >
@@ -103,7 +109,7 @@ export default function Dashboard({ admin }) {
             <div className="add__modal bg-gray-200 w-6/12 ">
               <CloseIcon id="close__res" onClick={() => setOpen(false)} />
               <div className="link__modal__row">
-                {/* <label>Link</label> */}
+         
                 <input placeholder="Paste Link" className="border p-1 pl-3 rounded w-11/12 shadow-md " value={link} onChange={(e) => setLink(e.target.value)} />
               </div>
               <div className="flex mt-4 w-full">
@@ -113,17 +119,33 @@ export default function Dashboard({ admin }) {
               </div>
           </Modal>
         </>
-      ) : (
-        ""
-      )}
+      {/* // ) : (
+      //   ""
+      // )} */}
     </div>
   );
 }
 
-Dashboard.getInitialProps = ({ req }) => {
-  const cookies = parseCookies(req);
 
-  return {
-    admin: cookies.Admin,
-  };
-};
+
+export async function getServerSideProps(context) {
+  const req = context.req;
+
+  if (!isAdmin(req)) {
+    return {
+      redirect: {
+        destination: '/Login',
+        permanent: false,
+      },
+    };
+  }
+
+  return { props: {} };
+}
+// Dashboard.getInitialProps = ({ req }) => {
+//   const cookies = parseCookies(req);
+
+//   return {
+//     admin: cookies.Admin,
+//   };
+// };

@@ -2,11 +2,11 @@
 
     padding-top: 70px;
     background-color:rgba(201, 202, 118, 0.137);
-    background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+    /* background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box; */
 }
 .programmes__main{
-    background: url('../assets/images/pg-bg.jpg');
-    height:400px;
+    background: url('../public/assets/images/pg-bg.jpg');
+    height:500px;
     position: relative;
     background-size: cover;
     /* background-position: center; */
@@ -28,59 +28,9 @@ color: #fff;
     }
   }
 
-  .programmes__item__one{
-     width: 100%;
-      height: 200px;
-position: relative;
-      background-size: cover;
-      background-image: url('../assets/images/campus.jpg');
-  }
-  .programmes__item__two{
-    height: 200px;
-    background-image: url('../assets/images/buddy.jpg');
-    background-size: cover;
-    position: relative;
-  }
-  .programmes__item__three{
-    height: 200px;
-    background-image: url('../assets/images/career.jpg');
-    position: relative;
-    background-size: cover;
-  }
-  .programmes__item__four{
-    position: relative;
-    height: 200px;
-    background-image: url('../assets/images/me-time.jpg');
-    background-size: cover;
-   
-  }
-  .programmes__item__five{
-    position: relative;
-    height: 200px;
-    background-image: url('../assets/images/skill.jpg');
-    background-size: cover;
-  }
-  .programmes__item__six{
-    position: relative;
-    height: 200px;
-    background-image: url('../assets/images/madrasa.jpeg');
-    background-size: cover;
-    
-  }
-  .programmes__item__seven{
-    position: relative;
-    height: 200px;
-    background-image: url('../assets/images/camp.jpeg');
-    background-size: cover;
-    opacity: .99;
-  }
-  .programmes__item__eight{
-    position: relative;
-    height: 200px;
-    background-image: url('https://images.unsplash.com/photo-1565843248736-8c41e6db117b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
-    background-size: cover;
-  }
-
+  
+  
+  
 
 
   #programmes__second__row{

@@ -7,18 +7,18 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  
 }
-
-
-module.exports = {
-  async redirects() {
-    return [
-      {
-        source: '/apply',
-        destination: 'https://docs.google.com/forms/d/1pozjGK8Nc8l3mpCdsFkN8SlvL6LcVm6FaOi4jkba-ws/edit?pli=1',
-        permanent: false,
-        basePath: false
-      },
-    ]
-  },
-};
+ 
+// module.exports = {
+//   async redirects() {
+//     return [
+//       {
+//         source: '/apply',
+//         destination: 'https://docs.google.com/forms/d/1pozjGK8Nc8l3mpCdsFkN8SlvL6LcVm6FaOi4jkba-ws/edit?pli=1',
+//         permanent: false,
+//         basePath: false
+//       },
+//     ]
+//   },
+// };

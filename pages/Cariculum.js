@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Head from 'next/head'
-import camp from '../assets/images/poster.jpeg'
+ 
 import Image from "next/image";
 export default function Cariculum() {
   return (
@@ -54,7 +54,7 @@ export default function Cariculum() {
           
           <div className="camp__poster ">
 
- <Image src={camp}   />
+ <Image src={'/assets/images/poster.jpeg'}   alt=""/>
               
  </div>
           </div>

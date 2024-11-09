@@ -12,16 +12,16 @@ export default function Testimonial() {
       </Head>
       <Navbar />
 
-      <div className="testi">
+      <div className="testi pb-32">
         <div className="about__main">
           <div className="about__main__head">
             <h1>Testimonials</h1>
           </div>
         </div>
-        <div className="testi__content">
-          <div className="message received">
+        <div className="testi__content ">
+          <div className="message received p-6">
             <span id="random">
-              <p>
+            <p className="pb-4">
                 It was a pleasant experience to participate in the Bolster
                 Monsoon Camp, a memoir to cherish for life. When all physical
                 gatherings were closed during the pandemic, the virtual camping
@@ -30,7 +30,7 @@ export default function Testimonial() {
                 interact with many people.{" "}
               </p>
             </span>
-            <span className="metadata">
+            <span className="metadata ">
               <span className="times">
                 <h6>Hanna on Camp</h6>
               </span>
@@ -39,7 +39,7 @@ export default function Testimonial() {
 
           <div id="right__chat" className="message received">
             <span id="random">
-              <p>
+              <p className="pb-4">
                 I am lucky enough to join the Bolster Buddy program by the
                 Bolster Foundation. I got chances to share my ambitions with
                 mentors who are currently guiding me to nurture my dreams.
@@ -56,7 +56,7 @@ export default function Testimonial() {
 
           <div className="message received">
             <span id="random">
-              <p>
+            <p className="pb-4">
                 I wanted to explore the world beyond the limits of classrooms
                 and family spaces. The Bolster Monsoon Camp was rich with many
                 pleasant memories when I talked with people from faraway places.
@@ -75,7 +75,7 @@ export default function Testimonial() {
 
           <div id="right__chat" className="message received">
             <span id="random">
-              <p>
+            <p className="pb-4">
                 After high school, I was looking for someone who could tell me
                 about my planning career. A friend of mine from my school
                 connected with me the Bolster team, who guide girl students on

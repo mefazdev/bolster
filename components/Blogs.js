@@ -4,7 +4,7 @@ import React from "react";
 export default function Blogs() {
   return (
     <div className="hm__blogs">
-      <div className="hm__blogs__content">
+      {/* <div className="hm__blogs__content">
         <div className="hm__blogs__head">
           <h3>What&apos;s new</h3>
         </div>
@@ -92,7 +92,7 @@ export default function Blogs() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

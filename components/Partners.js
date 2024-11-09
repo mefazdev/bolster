@@ -37,32 +37,32 @@ export default function Partners() {
           >
             <div className="partner__item">
               <div className="partner__img">
-                <Image src={part} />
+                <Image src={part} alt=""/>
               </div>
             </div>
             <div className="partner__item">
               <div className="partner__img">
-                <Image src={part} />
+                <Image src={part} alt=""/>
               </div>
             </div>
             <div className="partner__item">
               <div className="partner__img">
-                <Image src={part} />
+                <Image src={part} alt=""/>
               </div>
             </div>
             <div className="partner__item">
               <div className="partner__img">
-                <Image src={part} />
+                <Image src={part} alt=""/>
               </div>
             </div>
             <div className="partner__item">
               <div className="partner__img">
-                <Image src={part} />
+                <Image src={part} alt=""/>
               </div>
             </div>
             <div className="partner__item">
               <div className="partner__img">
-                <Image src={part} />
+                <Image src={part} alt=""/>
               </div>
             </div>
           </Carousel>
