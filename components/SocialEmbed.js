@@ -14,6 +14,7 @@ export default function Social() {
     fetchData();
     
   }, []);
+  const p = 'hello'
   return (
     <div className="embed lg:pt-16">
       <div className="hm__blogs__head">
@@ -35,6 +36,7 @@ export default function Social() {
             );
           }
         })} */}
+
 
  {link.map((data)=>(
    <div key={data.link} className="w-full flex   justify-center">
