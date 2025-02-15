@@ -37,7 +37,7 @@ export default function Social() {
         })} */}
 
  {link.map((data)=>(
-   <div className="w-full flex flex-col justify-center">
+   <div className="w-full flex   justify-center">
     {data.link} 
    <div dangerouslySetInnerHTML={{
      __html: `<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGF_X1wTlUk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote><script async src="https://www.instagram.com/embed.js"></script>`
@@ -45,9 +45,7 @@ export default function Social() {
  </div>
  ))}
       </div>
-      <div dangerouslySetInnerHTML={{
-     __html: `<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGF_X1wTlUk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote><script async src="https://www.instagram.com/embed.js"></script>`
-   }} />
+      
     </div>
   );
 }
