@@ -30,7 +30,7 @@ export default function Home() {
       <HomeNav />
 
       <main className="home pb-24" style={{ scrollBehavior: "smooth" }}>
-        <Hero />
+        {/* <Hero />
         <Status />
         <About />
 
@@ -38,7 +38,7 @@ export default function Home() {
         <Testimonial />
         <Involve />
 
-        <Slider />
+        <Slider /> */}
 
         <SocialEmbed />
       </main>
