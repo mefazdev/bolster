@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Head from 'next/head'
+import Footer from "../components/Footer";
 export default function Buddy() {
   return (
     <div>
@@ -24,10 +25,10 @@ export default function Buddy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="buddy" style={{ scrollBehavior: "smooth" }}>
+      <div className="buddy pb-24" style={{ scrollBehavior: "smooth" }}>
         <div className="buddy__main">
           <div className="buddy__main__head">
-            <h1>Bolster foundation</h1>
+            <h1>Bolster Buddy</h1>
           </div>
         </div>
 
@@ -60,6 +61,7 @@ export default function Buddy() {
           </h6>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

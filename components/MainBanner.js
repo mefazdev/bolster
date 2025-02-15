@@ -1,8 +1,11 @@
+import Image from "next/image";
+import Link from "next/link";
 import Carousel from "react-material-ui-carousel";
+import MenuIcon from "@mui/icons-material/Menu";
 export default function MainBanner() {
   return (
     <div>
-      <Carousel
+ <Carousel
         autoPlay={true}
         interval={4000}
         //   duration={2000}
@@ -119,7 +122,8 @@ export default function MainBanner() {
             </div>
           </div>
         </div>
-      </Carousel>
+      </Carousel>  
+   
     </div>
   );
 }

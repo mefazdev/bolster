@@ -78,7 +78,7 @@ export default function Navbar() {
                           }
                         >
                           {" "}
-                          Bolster Foundation{" "}
+                          Bolster Foundation 
                         </p>
                       </li>
                     </div>

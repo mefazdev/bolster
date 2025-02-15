@@ -19,7 +19,7 @@ export default function Partners() {
     },
   };
   return (
-    <div className="partners">
+    <div className="partners ">
       <div className="partners__content">
         <h2>Our Partners</h2>
         <div className="partners__row">

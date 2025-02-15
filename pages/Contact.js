@@ -35,18 +35,18 @@ export default function Contact() {
 
 const send = async (e)=>{
 
-  e.preventDefault()
-  setSending(true)
-  fetch('/api/mail', { 
-    method:'post',
-    body:JSON.stringify(data)
+  // e.preventDefault()
+  // setSending(true)
+  // fetch('/api/mail', { 
+  //   method:'post',
+  //   body:JSON.stringify(data)
    
-  }) 
-  setSending(false)
-  setName('')
-  setEmail('')
-  setPhone('')
-  setMessage('')
+  // }) 
+  // setSending(false)
+  // setName('')
+  // setEmail('')
+  // setPhone('')
+  // setMessage('')
 }
 
   return (

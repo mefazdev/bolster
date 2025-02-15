@@ -1,67 +1,58 @@
-.programmes{
-
-    padding-top: 70px;
-    background-color:rgba(201, 202, 118, 0.137);
-    /* background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box; */
+.programmes {
+  padding-top: 70px;
+  background-color: rgba(201, 202, 118, 0.137);
+  /* background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box; */
 }
-.programmes__main{
-    background: url('../public/assets/images/pg-bg.jpg');
-    height:500px;
-    position: relative;
-    background-size: cover;
-    /* background-position: center; */
+.programmes__main {
+  background: url("../public/assets/images/pg-bg.jpg");
+  height: 500px;
+  position: relative;
+  background-size: cover;
+  /* background-position: center; */
 }
-.programmes__main h1{
-    font-family: 'Poppins', sans-serif;
+.programmes__main h1 {
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
-color: #fff;
+  color: #fff;
 }
-.programmes__content{
-   
-    margin: auto;
-    margin-top: 70px;
-    padding-bottom: 50px;
+.programmes__content {
+  margin: auto;
+  margin-top: 70px;
+  padding-bottom: 50px;
 }
 @media only screen and (min-width: 800px) {
-    .programmes__content{
-     max-width: 85%;
-    }
+  .programmes__content {
+    max-width: 85%;
   }
+}
 
-  
-  
-  
+#programmes__second__row {
+  margin-top: 20px;
+}
 
-
-  #programmes__second__row{
-      margin-top: 20px;
-  }
-
-  .programmes__caption{
-    font-family: 'Poppins', sans-serif;
-    /* padding-left: 10px; */
-    height: 40px;
-    width: 100%;
+.programmes__caption {
+  font-family: "Poppins", sans-serif;
+  /* padding-left: 10px; */
+  height: 40px;
+  width: 100%;
   align-items: center;
   display: flex;
   color: #fff;
-    /* max-width: 200px; */
-    max-width: 100%;
-    position: absolute; bottom: 0px; 
-    background-color:rgba(0, 0, 0, 0.726) ;
-  }
+  /* max-width: 200px; */
+  max-width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.726);
+}
 
- 
+@media only screen and (max-width: 800px) {
+  .programmes__main {
+    height: 200px;
 
-  @media only screen and (max-width: 800px) {
-    .programmes__main{
-      
-      height:200px;
-     
-      /* background-position: center; */
+    /* background-position: center; */
   }
-  .programmes__content{
+  .programmes__content {
     padding: 15px;
     padding-bottom: 50px;
   }
-  }
+}
