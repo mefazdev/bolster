@@ -54,6 +54,9 @@ export default function Footer() {
           <Link href="/" passHref>
             <h2>Our Partners</h2>
           </Link>
+          <Link href="/Login" passHref>
+            <h2>Admin</h2>
+          </Link>
         </div>
         <div id="footer__adress" className="footer__item">
           <div className="footer__logo">

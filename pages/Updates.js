@@ -10,7 +10,7 @@ import moment from "moment";
 import Image from "next/image";
 import { collection, getDocs, limit, orderBy, query } from "firebase/firestore";
 import { db } from "../firebase";
-export default function updates() {
+export default function Updates() {
  
 
     const [links, setLinks] = useState([]);
