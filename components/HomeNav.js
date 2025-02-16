@@ -177,9 +177,9 @@ export default function HomeNav() {
                 Get Involved
               </div>
             </Link>
-            <Link href={"/Contact"} passHref>
+            <Link href={"/Updates"} passHref>
               <div className="bg-gray-600 rounded cursor-pointer   text-cente p-2 text-white hover:bg-white hover:text-gray-800 ">
-                Blog
+           Updates
               </div>
             </Link>{" "}
             <Link href={"/Contact"} passHref>

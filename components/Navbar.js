@@ -249,8 +249,8 @@ export default function Navbar() {
               </Link>
             </span>
             <span className="flex nav__item__span">
-              <Link href="/Blogs" passHref>
-                <h6 className="blog__h6">Blog</h6>
+              <Link href="/Updates" passHref>
+                <h6 className="blog__h6">Updates</h6>
               </Link>
             </span>
 
@@ -410,10 +410,10 @@ export default function Navbar() {
               ""
             )}
           </div>
-          <Link href="/Blog" passHref>
+          <Link href="/Updates" passHref>
             <div className="collapse_row flex">
               <div className="flex">
-                <p>Blog</p>
+                <p>Updates</p>
               </div>
             </div>
           </Link>
