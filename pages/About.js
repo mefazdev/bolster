@@ -20,14 +20,14 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <Navbar />
-      <div className="about" style={{ scrollBehavior: "smooth" }}>
+      <div  className="about" style={{ scrollBehavior: "smooth" }}>
         <div className="about__main">
           <div className="about__main__head">
             <h1>Bolster foundation</h1>
           </div>
         </div>
 
-        <div className="about__content gap-10 grid lg:grid-cols-3 lg:py-20">
+        <div data-aos="flip-up"  className="about__content gap-10 grid lg:grid-cols-3 lg:py-20">
           <div className="lg:col-span-2">
             <h2>We bolster you!</h2>
 

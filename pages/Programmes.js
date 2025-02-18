@@ -68,6 +68,7 @@ export default function Programmes() {
             {docs.map((d) =>
               d.linkType == "a" ? (
                 <a
+                data-aos="flip-up" 
                   href={d.link}
                   key={d.name}
                   className="relative h-[250px] "
@@ -87,6 +88,7 @@ export default function Programmes() {
               ) : (
                 <Link key={d.name} href={d.link} passHref className='cursor-pointer h-[250px] w-full'>
                   <div
+                  data-aos="flip-up" 
                     key={d.name}
                     className="relative h-[250px] w-full   shadow-2xl rounded-lg cursor-pointer"
                   >

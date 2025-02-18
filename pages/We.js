@@ -88,7 +88,7 @@ export default function We() {
             <div className="mt-10 grid gap-6 grid-cols-2   lg:grid-cols-3">
               {thinkDocs.map((d) => (
                 <div
-
+                data-aos="flip-up" 
                   key={d.name}
                   onMouseEnter={() => setHoveredMember(d.name)}
                   onMouseLeave={() => setHoveredMember(null)}
@@ -131,7 +131,7 @@ export default function We() {
               
               {team.map((d) => (
                 <div
-
+                data-aos="flip-up" 
                   key={d.name}
                   onMouseEnter={() => setHoveredMember(d.name)}
                   onMouseLeave={() => setHoveredMember(null)}

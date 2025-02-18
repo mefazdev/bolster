@@ -24,7 +24,14 @@ import '../styles/testimonial.css'
 
 import '../styles/impact.css'
 import '../styles/milestones.css'
+import { useEffect } from 'react';
+import Script from 'next/script';
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    import("aos").then((aos) => {
+      aos.init({});
+    });
+  }, []);
   return (
     <>
     <Head>
@@ -50,8 +57,17 @@ function MyApp({ Component, pageProps }) {
 <style>
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@500&family=Merriweather:wght@300&family=Rubik:wght@300&display=swap);
 </style> * 
+<link
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet"
+        />
     </Head>
   <Component {...pageProps}/>
+  <Script
+          src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+          strategy="beforeInteractive"
+        />
+        <Script id="aos-init" strategy="lazyOnload" />
   </>
   ) 
 }

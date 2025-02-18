@@ -27,7 +27,7 @@ export default function About() {
           </div>
         </a>
       </div>
-      <div className="home__about lg:w-11/12 mx-auto py-24">
+      <div data-aos="flip-up"  className="home__about lg:w-11/12 mx-auto py-24">
         <div className="home__about__head">
           <div className="home__subhead">
             <h3>About us</h3>

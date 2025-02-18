@@ -13,7 +13,7 @@ export default function Video() {
           </div>
         </div>
 
-        <div className="photo__content">
+        <div className="photo__content" data-aos="flip-up" >
           <div className="video__row  gap-5 grid lg:grid-cols-3">
             <iframe
               src="https://www.youtube.com/embed/870oiV_Mzy0"

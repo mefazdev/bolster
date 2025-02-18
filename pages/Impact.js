@@ -17,7 +17,7 @@ export default function Impact() {
             <h1>Impact</h1>
           </div>
         </div>
-        <div className="impact__content">
+        <div data-aos="flip-up"  className="impact__content">
           <p>
             The Bolster is working in the field of empowering minority
             communities in India. We ensure that at least half of the

@@ -6,7 +6,7 @@ import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import Link from "next/link";
 export default function Involve() {
   return (
-    <div className="hm__involve mt-24 pb-24">
+    <div data-aos="flip-up" className="hm__involve   pb-24">
       <div className="hm__involve__contetn">
         <div className="hm__involve__head">
           <h3>Get involved</h3>

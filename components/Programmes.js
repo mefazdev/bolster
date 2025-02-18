@@ -71,7 +71,7 @@ export default function Programmes() {
           <h3>Our programmes</h3>
         </div>
 
-        <div className="prgm__content__main gap-3 lg:gap-5 grid lg:grid-cols-2">
+        <div data-aos="zoom-in"  className="prgm__content__main gap-3 lg:gap-5 grid lg:grid-cols-2">
           <div className="prgm__content__main__left">
             <div className="prgm__content__main__left__caption">
               <h3> Bolster Girls Campus </h3>
@@ -79,7 +79,7 @@ export default function Programmes() {
           </div>
           <div className="prgm__content__main__right">
             <h4> Bolster Girls Campus </h4>
-            <p>
+            <p className="hidden lg:grid">
               Bolster Girls Campus (BGC) is the flagship initiative of Bolster
               Foundation, dedicated to empowering young women through quality
               education and holistic personal development. This residential
@@ -102,6 +102,16 @@ export default function Programmes() {
               to modern educational tools and opportunities, enabling students
               to pursue higher education, thrive in competitive fields, and
               become future leaders in their communities.
+            </p>
+            <p className="lg:hidden">
+              Bolster Girls Campus (BGC) is the flagship initiative of Bolster
+              Foundation, dedicated to empowering young women through quality
+              education and holistic personal development. This residential
+              higher secondary program is designed exclusively for girls,
+              providing them with a nurturing and academically rigorous
+              environment to excel in their studies and prepare for future
+              careers.
+             
             </p>
             <a href="https://www.bolstercampus.in/">
               <button>Learn More</button>
@@ -135,7 +145,7 @@ export default function Programmes() {
 
           {data?.map((d, i) => {
             return (
-              <div
+              <div data-aos="fade-up" 
                 key={i}
                 className="p-3 lg:p-4 bg-white   m-auto lg:w-11/12   shadow-lg rounded-md group"
               >

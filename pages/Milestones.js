@@ -19,7 +19,7 @@ export default function Milestones() {
           </div>
         </div>
         <div className="about__content grid gap-6">
-          <div className=" bg-gray-50 p-4 shadow rounded-lg">
+          <div data-aos="flip-up"  className=" bg-gray-50 p-4 shadow rounded-lg">
             <div className="m__stone__head">
               <h3>2018 </h3>
             </div>
@@ -29,7 +29,7 @@ export default function Milestones() {
             </p>
           </div>
 
-          <div className=" bg-gray-50 p-4 shadow rounded-lg">
+          <div data-aos="flip-up"  className=" bg-gray-50 p-4 shadow rounded-lg">
             <div className="m__stone__head">
               <h3>2019 June </h3>
             </div>
@@ -40,7 +40,7 @@ export default function Milestones() {
               educational administration
             </p>
           </div>
-          <div className=" bg-gray-50 p-4 shadow rounded-lg">
+          <div data-aos="flip-up"  className=" bg-gray-50 p-4 shadow rounded-lg">
             <div className="m__stone__head">
               <h3>2021 June</h3>
             </div>
@@ -53,7 +53,7 @@ export default function Milestones() {
               sessions
             </p>
           </div>
-          <div className=" bg-gray-50 p-4 shadow rounded-lg">
+          <div data-aos="flip-up"  className=" bg-gray-50 p-4 shadow rounded-lg">
             <div className="m__stone__head">
               <h3>2021 September </h3>
             </div>
@@ -66,7 +66,7 @@ export default function Milestones() {
             </p>
           </div>
 
-          <div className=" bg-gray-50 p-4 shadow rounded-lg">
+          <div data-aos="flip-up"  className=" bg-gray-50 p-4 shadow rounded-lg">
             <div className="m__stone__head">
               <h3>
                 2021 October <br />

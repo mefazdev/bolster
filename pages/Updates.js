@@ -58,7 +58,7 @@ export default function Updates() {
         <div className="grid lg:grid-cols-3 gap-5">
       {links.length > 0 && (
         links.map((d,  ) => (
-          <div key={d.link}  >
+          <div key={d.link} data-aos="flip-up"  >
             {d.lin}
             <blockquote
               className="instagram-media"

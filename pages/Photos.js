@@ -28,9 +28,9 @@ export default function Photos() {
           <div className="photo__row gap-5 grid md:grid-cols-2 lg:grid-cols-4">
            
            {docs.map((img)=>(
-             <div key={img} className="photo__item">
+             <div data-aos="flip-up"  key={img} className="photo__item">
              <div className="photo__img">
-               <Image src={img} alt="" />
+               <Image src={img} alt="" height={300} width={400} className="rounded"/>
              </div>
             
            </div>

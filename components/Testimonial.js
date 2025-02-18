@@ -191,7 +191,7 @@ the University of Stirling.`,
     },
   ];
   return (
-    <div className="py-20 pt-32">
+    <div data-aos="flip-up" className="py-10 md:py-16">
       <div className="px-4 lg:px-0 lg:w-9/12 mx-auto">
        <Carousel
               autoPlay={true}
@@ -206,7 +206,7 @@ the University of Stirling.`,
             >
               {docs.map((doc) => (
           <div key={doc.name} className="lg:flex gap-10 items-center ">
-            <div className="relative h-[200px] w-[200px] mx-auto lg:min-h-[200px] lg:min-w-[200px] rounded-full overflow-hidden">
+            <div className="relative h-[150px] w-[150px] md:h-[200px] md:w-[200px] mx-auto lg:min-h-[200px] lg:min-w-[200px] rounded-full overflow-hidden">
               <Image
                 src={doc.image}
                 layout="fill"

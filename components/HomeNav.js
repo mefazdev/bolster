@@ -28,7 +28,7 @@ export default function HomeNav() {
 
   return (
     <div className="absolute w-full z-50">
-      <div className="flex items-center justify-between px-2 lg:px-0 lg:w-11/12 mx-auto pt-8">
+      <div className="flex items-center justify-between px-2 pr-4 lg:pr-0 lg:px-0 lg:w-11/12 mx-auto pt-8">
         <Link href="/" passHref>
           <div className="relative     h-[70px] w-[160px] lg:h-[70px] lg:w-[250px]">
             <Image

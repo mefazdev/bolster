@@ -59,7 +59,7 @@ const send = async (e)=>{
           </div>
         </div>
 
-        <div className="contact__content container pl-2 pr-2  pr-15">
+        <div data-aos="flip-up"  className="contact__content container pl-2 pr-2  pr-15">
           <div className="contact__first__row  grid grid-cols-1 lg:grid-cols-2">
             <div>
               <h5>CONTACT US</h5>

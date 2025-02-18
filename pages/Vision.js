@@ -17,7 +17,7 @@ export default function Vision() {
           {/* We bolster you! */}
         </div>
 
-        <div className="vision__content grid grid-cols-1  lg:grid-cols-3 pt-10 pb-32">
+        <div  className="vision__content grid grid-cols-1  lg:grid-cols-3 pt-10 pb-32">
           <div className="lg:col-span-2 gap-10 grid grid-cols-1">
             {/* <div className="vision__img">
               <div className="vision__sub">
@@ -30,7 +30,7 @@ export default function Vision() {
                 </p>
               </div>
             </div> */}
-            <div className="relative h-[350px] w-full   shadow-2xl rounded-lg cursor-pointer">
+            <div data-aos="flip-up"  className="relative h-[350px] w-full   shadow-2xl rounded-lg cursor-pointer">
               <Image
                 src={"/assets/images/vision.jpg"}
                 className="object-cover rounded-"
@@ -48,7 +48,7 @@ export default function Vision() {
               </div>
             </div>
 
-            <div className="relative h-[350px] w-full   shadow-2xl rounded-lg cursor-pointer">
+            <div data-aos="flip-up"  className="relative h-[350px] w-full   shadow-2xl rounded-lg cursor-pointer">
               <Image
                 src={"/assets/images/mision.jpg"}
                 className="object-cover rounded-"

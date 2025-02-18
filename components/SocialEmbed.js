@@ -27,7 +27,7 @@ export default function Social() {
 
  
   return (
-    <div className="embed lg:pt-20">
+    <div data-aos="flip-up"  className="embed lg:pt-20">
       <div className="hm__blogs__head">
         <h3>What&apos;s new</h3>
       </div>

@@ -22,7 +22,7 @@ export default function Hero() {
     setOpen(true);
   };
   useEffect(() => {
-    // controlOpen();
+    controlOpen();
   }, []);
   return (
     <div>
@@ -32,7 +32,7 @@ export default function Hero() {
         </video>
         <div className="h-full px-4  lg:px-0">
           <div className="relative  z-10 flex items-center justify-center h-full w-full text-white">
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold">
+            <h1 data-aos="zoom-in" className="text-3xl sm:text-5xl md:text-7xl font-bold">
               WE BOLSTER YOU!
             </h1>
           </div>
