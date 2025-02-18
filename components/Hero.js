@@ -22,7 +22,7 @@ export default function Hero() {
     setOpen(true);
   };
   useEffect(() => {
-    controlOpen();
+    // controlOpen();
   }, []);
 
    // Add scroll event listener
