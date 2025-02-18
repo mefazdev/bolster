@@ -40,10 +40,10 @@ export default function Hero() {
       };
     }
   }, [open]); // Only run when the modal is open
-
+// ////
   return (
     <div >
-      <div className="relative w-full h-[60vh] lg:h-screen">
+      <div className="relative w-full h-[80vh] lg:h-screen">
         <video className="video-bg" autoPlay loop muted playsInline>
           <source src="/assets/bs.mp4" type="video/mp4" />
         </video>
