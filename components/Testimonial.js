@@ -191,7 +191,7 @@ the University of Stirling.`,
     },
   ];
   return (
-    <div data-aos="flip-up" className="py-10 md:py-16">
+    <div data-aos="fade-up" className="py-10 md:py-16">
       <div className="px-4 lg:px-0 lg:w-9/12 mx-auto">
        <Carousel
               autoPlay={true}

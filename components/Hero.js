@@ -24,9 +24,26 @@ export default function Hero() {
   useEffect(() => {
     controlOpen();
   }, []);
+
+   // Add scroll event listener
+   useEffect(() => {
+    if (open) {
+      const handleScroll = () => {
+       setOpen(false); // Close the modal on scroll
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      // Clean up the event listener
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [open]); // Only run when the modal is open
+
   return (
-    <div>
-      <div className="relative w-full h-screen">
+    <div >
+      <div className="relative w-full h-[60vh] lg:h-screen">
         <video className="video-bg" autoPlay loop muted playsInline>
           <source src="/assets/bs.mp4" type="video/mp4" />
         </video>
@@ -43,8 +60,10 @@ export default function Hero() {
         open={open}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        onClose={() => setOpen(false)}
+        
       >
-        <div className="mx-auto outline-none">
+        <div onScroll={() => setOpen(false)} className="mx-auto outline-none">
           <Card sx={{ maxWidth: 400 }} className="relative">
             <CancelSharpIcon
               onClick={() => setOpen(false)}

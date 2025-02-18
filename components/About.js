@@ -18,16 +18,17 @@ export default function About() {
         <div className="social__circle rounded-full">
           <TwitterIcon id="social__ic" />
         </div>
-        <div className="social__circle rounded-full">
+        <a href="https://www.instagram.com/bolstercampus/"><div className="social__circle rounded-full">
           <InstagramIcon id="social__ic" />
-        </div>
+        </div></a>
+        
         <a href="https://www.youtube.com/c/BolsterFoundation">
           <div className="social__circle rounded-full">
             <YouTubeIcon id="social__ic" />
           </div>
         </a>
       </div>
-      <div data-aos="flip-up"  className="home__about lg:w-11/12 mx-auto py-24">
+      <div data-aos="fade-up"  className="home__about lg:w-11/12 mx-auto py-24">
         <div className="home__about__head">
           <div className="home__subhead">
             <h3>About us</h3>
