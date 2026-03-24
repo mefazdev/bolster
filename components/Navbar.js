@@ -184,6 +184,19 @@ export default function Navbar() {
                       </li>
                     </div>
                   </Link>
+                  <Link href="/HybridSchool" passHref>
+                    <div
+                      className={
+                        router.pathname == "/HybridSchool"
+                          ? "active__dropdown py-2"
+                          : "service__group__span py-2"
+                      }
+                    >
+                      <li className=" px-4 block whitespace-no-wrap text-sm ">
+                        Bolster Hybrid School
+                      </li>
+                    </div>
+                  </Link>
                   <Link href="/Impact" passHref>
                     <div
                       className={
@@ -355,6 +368,11 @@ export default function Navbar() {
                 <Link href="/Programmes" passHref>
                   <div className="collapse_collapse__row">
                     <p>Programmes</p>
+                  </div>
+                </Link>
+                <Link href="/HybridSchool" passHref>
+                  <div className="collapse_collapse__row">
+                    <p>Bolster Hybrid School</p>
                   </div>
                 </Link>
                 <Link href="/Impact" passHref>

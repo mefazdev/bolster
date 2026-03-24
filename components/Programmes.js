@@ -28,6 +28,13 @@ export default function Programmes() {
   // ];
   const data = [
     {
+      name: "Bolster Hybrid School",
+      image: "/assets/images/edu.jpg",
+      link: "/HybridSchool",
+      description:
+        "A New Way to Learn Humanities! Our Hybrid Higher Secondary Humanities Program is designed for students who want to explore society, culture, politics, and the economy in a deeper, more engaging way.",
+    },
+    {
       name: "Bolster Buddy",
 
       description:

@@ -40,7 +40,7 @@ export default function Hero() {
       };
     }
   }, [open]); // Only run when the modal is open
-// ////
+const h = 'jjdjaj'
   return (
     <div >
       <div className="relative w-full h-[80vh] lg:h-screen">

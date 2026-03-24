@@ -133,6 +133,11 @@ export default function HomeNav() {
                       Programmes
                     </div>
                   </Link>
+                  <Link href="/HybridSchool" passHref>
+                    <div className="px-4 py-2 cursor-pointer hover:bg-gray-800 hover:text-white">
+                      Bolster Hybrid School
+                    </div>
+                  </Link>
                   <Link href="/Impact" passHref>
                     <div className="px-4 py-2 cursor-pointer hover:bg-gray-800 hover:text-white">
                       Impact
