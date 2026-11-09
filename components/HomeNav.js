@@ -187,6 +187,11 @@ export default function HomeNav() {
            Updates
               </div>
             </Link>{" "}
+            <Link href={"/Blogs"} passHref>
+              <div className="bg-gray-600 rounded cursor-pointer   text-cente p-2 text-white hover:bg-white hover:text-gray-800 ">
+                Blog
+              </div>
+            </Link>
             <Link href={"/Contact"} passHref>
               <div className="  bg-gray-600 rounded cursor-pointer   text-cente p-2 text-white hover:bg-white hover:text-gray-800 ">
                 Contact us

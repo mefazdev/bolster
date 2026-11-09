@@ -1,0 +1,96 @@
+/* Student blog (Blogs list + /blog/[slug]) */
+
+.blog-ui {
+  font-family: "Heebo", "Noto Sans Malayalam", system-ui, sans-serif;
+  color: #292524;
+  box-sizing: border-box;
+  overflow-x: clip;
+}
+/* testimonial.css sets `* { box-sizing: inherit }` globally, which undoes Tailwind's
+   border-box. Restore it inside the blog so padded elements don't overflow. */
+.blog-ui *,
+.blog-ui *::before,
+.blog-ui *::after {
+  box-sizing: border-box;
+}
+
+.blog-ui .blog-heading {
+  font-family: "Poppins", "Noto Sans Malayalam", system-ui, sans-serif;
+}
+
+/* Article body typography */
+.post-body {
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: #3a3633;
+  overflow-wrap: break-word;
+}
+.post-body > * + * {
+  margin-top: 1.25em;
+}
+.post-body p {
+  text-align: left;
+}
+.post-body h2,
+.post-body h3 {
+  font-family: "Poppins", "Noto Sans Malayalam", system-ui, sans-serif;
+  color: #1c1917;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 2em;
+}
+.post-body h2 { font-size: 1.6rem; }
+.post-body h3 { font-size: 1.3rem; }
+.post-body strong { color: #1c1917; font-weight: 700; }
+.post-body a {
+  color: #ea580c;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(234, 88, 12, 0.35);
+  transition: text-decoration-color 0.2s;
+}
+.post-body a:hover { text-decoration-color: #ea580c; }
+.post-body ul,
+.post-body ol {
+  padding-left: 1.5em;
+}
+.post-body ul { list-style: disc; }
+.post-body ol { list-style: decimal; }
+.post-body li { padding-left: 0.25em; }
+.post-body li + li { margin-top: 0.4em; }
+.post-body li::marker { color: #ea580c; font-weight: 600; }
+.post-body blockquote {
+  position: relative;
+  margin: 2em 0;
+  padding: 1.25em 1.5em;
+  border-left: 4px solid rgb(201, 202, 118);
+  background: #fff;
+  border-radius: 0 1rem 1rem 0;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #44403c;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.post-body figure { margin: 2em 0; }
+.post-body figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+.post-body figcaption {
+  margin-top: 0.6em;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #78716c;
+}
+.post-body code {
+  background: #f5f5f4;
+  padding: 0.15em 0.4em;
+  border-radius: 0.375rem;
+  font-size: 0.9em;
+}
+
+@media (max-width: 640px) {
+  .post-body { font-size: 1.0625rem; line-height: 1.8; }
+}

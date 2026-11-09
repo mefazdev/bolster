@@ -13,8 +13,10 @@ import Status from "../components/Status";
 import Testimonial from "../components/Testimonial";
 
 import HomeNav from "../components/HomeNav";
+import Blogs from "../components/Blogs";
+import { sanityFetch, latestPostsQuery } from "../lib/sanity";
 
-export default function Home() {
+export default function Home({ latestPosts }) {
   return (
     <div>
       <Head>
@@ -33,17 +35,31 @@ export default function Home() {
         <Hero />
         <Status />
         <About />
- 
+
         <Programmes />
         <Testimonial />
         <Involve />
 
         <Slider />
 
+
+
         <SocialEmbed />
+        <Blogs posts={latestPosts} />
       </main>
 
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  let latestPosts = [];
+  try {
+    latestPosts = (await sanityFetch(latestPostsQuery)) || [];
+  } catch (e) {
+    // Never let a blog/Sanity problem break the home page; the section just hides.
+    console.error("Failed to load latest blog posts:", e.message);
+  }
+  return { props: { latestPosts }, revalidate: 60 };
 }
