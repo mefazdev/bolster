@@ -2,18 +2,7 @@ import React from "react";
 import Modal from "@mui/material/Modal";
 import { useEffect, useState } from "react";
 import { db } from "../firebase";
-import {
-  addDoc,
-  collection,
-  onSnapshot,
-  orderBy,
-  query,
-  doc,
-  serverTimestamp,
-  deleteDoc,
-  limit,
-  getDocs,
-} from "@firebase/firestore";
+import { collection, onSnapshot, orderBy, query } from "@firebase/firestore";
 import CloseIcon from "@mui/icons-material/Close";
 
 import { useRouter } from "next/router";
@@ -24,27 +13,17 @@ export default function Dashboard({ admin }) {
 
   const [adding, setAdding] = useState(false);
   const [deleting, setDeleting] = useState(false);
+  const [error, setError] = useState("");
   const router = useRouter();
   const [links, setLinks] = useState([]);
 
+  // Reads come straight from Firestore (public read); writes go through /api/links.
   useEffect(() => {
-    // const fetchData = async () => {
-    //   const q = query(
-    //     collection(db, "link"),
-    //     orderBy("timestamp", "desc"),
-      
-    //   );
-     
-    //   const data = await getDocs(q);
-    //   setLinks(data.docs.map((doc) => doc.data()));
-    // };
-    const fetchData = async () => {
-      const q =  query(collection(db, "link"), orderBy("timestamp", "desc"));
-      onSnapshot(q, (snapshot) => {
-        setLinks(snapshot.docs.map((doc) => doc));
-      });
-    };
-    fetchData();
+    const q = query(collection(db, "link"), orderBy("timestamp", "desc"));
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      setLinks(snapshot.docs.map((doc) => doc));
+    });
+    return unsubscribe;
   }, []);
   useEffect(() => {
     // Run Instagram embed script AFTER component renders
@@ -53,23 +32,46 @@ export default function Dashboard({ admin }) {
     }
   }, [links]); // Run this effect whenever `links` updates
 
-  const addLink = async () => {
-    setAdding(true);
-    if (link) {
-      const docRef = await addDoc(collection(db, "link"), {
-        link: link,
-        timestamp: serverTimestamp(),
+  // Calls the admin API; returns true on success. A 401 means the session expired.
+  const callLinksApi = async (method, body) => {
+    setError("");
+    try {
+      const res = await fetch("/api/links", {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
       });
+      if (res.status === 401) {
+        router.push("/Login");
+        return false;
+      }
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        setError(data.message || "Something went wrong");
+        return false;
+      }
+      return true;
+    } catch (e) {
+      setError("Network error, please try again");
+      return false;
+    }
+  };
 
+  const addLink = async () => {
+    if (!link.trim() || adding) return;
+    setAdding(true);
+    const ok = await callLinksApi("POST", { link });
+    setAdding(false);
+    if (ok) {
       setLink("");
       setOpen(false);
-      setAdding(false);
     }
   };
 
   const deletItem = async (id) => {
+    if (deleting) return;
     setDeleting(true);
-    await deleteDoc(doc(db, "link", id));
+    await callLinksApi("DELETE", { id });
     setDeleting(false);
   };
 
@@ -108,6 +110,9 @@ export default function Dashboard({ admin }) {
         </div>
 
         <div className="admin__content ">
+          {error && !open && (
+            <p className="text-center text-red-600 mb-4">{error}</p>
+          )}
           <div className="admin__row grid lg:grid-cols-3 gap-2">
             {links.length > 0 &&
               links.map((d) => (
@@ -143,6 +148,7 @@ export default function Dashboard({ admin }) {
                 value={link}
                 onChange={(e) => setLink(e.target.value)}
               />
+              {error && <p className="text-red-600 text-sm mt-2">{error}</p>}
             </div>
             <div className="flex mt-4 w-full">
               <button

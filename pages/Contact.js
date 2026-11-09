@@ -10,7 +10,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneInput from "react-phone-number-input";
-import axios from "axios";
 // import api from '../api/index.php'
 export default function Contact() {
 

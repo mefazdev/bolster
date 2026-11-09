@@ -1,22 +1,31 @@
-import { serialize } from 'cookie';
+import { serialize } from "cookie";
+import { COOKIE_NAME, SESSION_SECONDS, checkCredentials, createSessionToken } from "../../lib/checkAuth";
 
 export default function handler(req, res) {
-  const { username, password } = req.body;
-
-  // Check credentials from env variables
-  if (
-    username === process.env.ADMIN_USERNAME &&
-    password === process.env.ADMIN_PASSWORD
-  ) {
-    // Set a cookie to remember admin access
-    res.setHeader('Set-Cookie', serialize('admin_auth', 'true', {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      maxAge: 60 * 60 * 8, // 8 hours
-      path: '/',
-    }));
-    return res.status(200).json({ success: true });
-  } else {
-    return res.status(401).json({ success: false, message: 'Invalid credentials' });
+  if (req.method !== "POST") {
+    res.setHeader("Allow", "POST");
+    return res.status(405).json({ success: false, message: "Method not allowed" });
   }
+
+  const { username, password } = req.body || {};
+  if (!checkCredentials(username, password)) {
+    return res.status(401).json({ success: false, message: "Invalid credentials" });
+  }
+
+  const token = createSessionToken();
+  if (!token) {
+    return res.status(500).json({ success: false, message: "Login is not configured on the server" });
+  }
+
+  res.setHeader(
+    "Set-Cookie",
+    serialize(COOKIE_NAME, token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      maxAge: SESSION_SECONDS,
+      path: "/",
+    })
+  );
+  return res.status(200).json({ success: true });
 }

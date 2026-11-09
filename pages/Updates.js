@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Head from "next/head";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import useInstagramEmbeds from "../lib/useInstagramEmbeds";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import axios from "axios";
 import moment from "moment";
 
 // import cookies from "js-cookie";
@@ -13,26 +13,21 @@ import { db } from "../firebase";
 export default function Updates() {
  
 
+    const gridRef = useRef(null);
     const [links, setLinks] = useState([]);
 
     useEffect(() => {
       const fetchData = async () => {
-        const q = query(collection(db, "link"), orderBy("timestamp", "desc"),limit(2));
-        // const data = await getDocs(q);
-        // setLinks(data.docs.map((doc) => ({ url: doc.data().url })));
+        // "View More" from the home page (which shows 3) lands here, so show more than that.
+        const q = query(collection(db, "link"), orderBy("timestamp", "desc"), limit(30));
         const data = await getDocs(q);
-        setLinks(data.docs.map((doc) => doc.data()));
+        setLinks(data.docs.map((doc) => ({ id: doc.id, ...doc.data() })).filter((d) => d.link));
       };
-  
-      fetchData();
+
+      fetchData().catch((e) => console.error("Failed to load Instagram links:", e));
     }, []);
-  
-    useEffect(() => {
-      // Run Instagram embed script AFTER component renders
-      if (window.instgrm) {
-        window.instgrm.Embeds.process();
-      }
-    }, [links]); // Run this effect whenever `links` updates
+
+    useInstagramEmbeds(gridRef, [links]);
   
    
 
@@ -55,11 +50,10 @@ export default function Updates() {
         </div>
 
         <div className="py-32 px-4 lg:px-0 w-10/12 mx-auto" style={{scrollBehavior:'smooth'}}>
-        <div className="grid lg:grid-cols-3 gap-5">
+        <div ref={gridRef} className="grid lg:grid-cols-3 gap-5">
       {links.length > 0 && (
-        links.map((d,  ) => (
-          <div key={d.link} data-aos="flip-up"  >
-            {d.lin}
+        links.map((d) => (
+          <div key={d.id} data-aos="flip-up"  >
             <blockquote
               className="instagram-media"
               data-instgrm-permalink={d.link}
@@ -71,8 +65,7 @@ export default function Updates() {
       {/* Load Instagram embed script once */}
      
     </div>
-    <script async src="https://www.instagram.com/embed.js"></script>
-   
+
         </div>
       </div>
 

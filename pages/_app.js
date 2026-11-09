@@ -26,7 +26,6 @@ import '../styles/testimonial.css'
 import '../styles/impact.css'
 import '../styles/milestones.css'
 import { useEffect } from 'react';
-import Script from 'next/script';
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     import("aos").then((aos) => {
@@ -64,11 +63,6 @@ function MyApp({ Component, pageProps }) {
         />
     </Head>
   <Component {...pageProps}/>
-  <Script
-          src="https://unpkg.com/aos@2.3.1/dist/aos.js"
-          strategy="beforeInteractive"
-        />
-        <Script id="aos-init" strategy="lazyOnload" />
   </>
   ) 
 }

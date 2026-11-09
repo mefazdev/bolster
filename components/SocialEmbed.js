@@ -1,18 +1,11 @@
-import React, { useEffect, useState } from "react";
-import Script from "next/script";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { collection, orderBy, query, getDocs, limit } from "@firebase/firestore";
 import { db } from "../firebase";
-
-// Turns the <blockquote class="instagram-media"> placeholders into embeds.
-// Safe to call repeatedly; does nothing until Instagram's script has loaded.
-function processEmbeds() {
-  if (typeof window !== "undefined" && window.instgrm) {
-    window.instgrm.Embeds.process();
-  }
-}
+import useInstagramEmbeds from "../lib/useInstagramEmbeds";
 
 export default function SocialEmbed() {
+  const gridRef = useRef(null);
   const [links, setLinks] = useState([]);
   const [status, setStatus] = useState("loading"); // loading | ready | error
 
@@ -36,10 +29,7 @@ export default function SocialEmbed() {
     };
   }, []);
 
-  // Covers the case where the script was already loaded (e.g. navigating back to the home page).
-  useEffect(() => {
-    if (links.length) processEmbeds();
-  }, [links]);
+  useInstagramEmbeds(gridRef, [links]);
 
   // Nothing to show: hide the whole section instead of an empty heading.
   if (status === "error" || (status === "ready" && links.length === 0)) return null;
@@ -50,7 +40,7 @@ export default function SocialEmbed() {
         <h3>What&apos;s new</h3>
       </div>
 
-      <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div ref={gridRef} className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {status === "loading"
           ? [0, 1, 2].map((i) => (
               <div
@@ -81,9 +71,6 @@ export default function SocialEmbed() {
           <a className="m-auto mt-8 bg-[#c9ca76] p-1 px-5 text-black transition hover:brightness-95">View More</a>
         </Link>
       </div>
-
-      {/* next/script loads once per app and also works on client-side navigation */}
-      <Script src="https://www.instagram.com/embed.js" strategy="lazyOnload" onLoad={processEmbeds} />
     </section>
   );
 }

@@ -24,6 +24,21 @@ import {
   studioUrl,
 } from "../../lib/sanity";
 
+// Only allow web, email, phone and same-site links from post content. Anything else
+// (e.g. "javascript:" or "data:") is dropped so a post can't run code in a reader's browser.
+function safeHref(href) {
+  if (typeof href !== "string") return null;
+  const trimmed = href.trim();
+  if (trimmed.startsWith("/") && !trimmed.startsWith("//")) return trimmed; // same-site path
+  if (trimmed.startsWith("#")) return trimmed;
+  try {
+    const { protocol } = new URL(trimmed);
+    return ["http:", "https:", "mailto:", "tel:"].includes(protocol) ? trimmed : null;
+  } catch {
+    return null;
+  }
+}
+
 const ptComponents = {
   types: {
     image: ({ value }) =>
@@ -36,9 +51,11 @@ const ptComponents = {
   },
   marks: {
     link: ({ value, children }) => {
-      const external = value?.href?.startsWith("http");
+      const href = safeHref(value?.href);
+      if (!href) return <>{children}</>; // keep the text, drop the unsafe link
+      const external = /^https?:/i.test(href);
       return (
-        <a href={value?.href} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}>
+        <a href={href} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}>
           {children}
         </a>
       );

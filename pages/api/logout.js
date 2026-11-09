@@ -1,11 +1,18 @@
-import { serialize } from 'cookie';
+import { serialize } from "cookie";
+import { COOKIE_NAME } from "../../lib/checkAuth";
 
 export default function handler(req, res) {
-  res.setHeader('Set-Cookie', serialize('admin_auth', '', {
+  const expired = {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
     maxAge: -1, // Expire immediately
-    path: '/',
-  }));
+    path: "/",
+  };
+  res.setHeader("Set-Cookie", [
+    serialize(COOKIE_NAME, "", expired),
+    // Clear the old unsigned cookie from before the session change.
+    serialize("admin_auth", "", expired),
+  ]);
   res.status(200).json({ success: true });
 }
