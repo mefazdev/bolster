@@ -5,84 +5,73 @@ import ApartmentIcon from "@mui/icons-material/Apartment";
 import Image from "next/image";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Link from "next/link";
+import { containerClass } from "./Container";
+
+// Footer link columns: plain links in lists (not headings), so they don't pollute the page outline.
+const linkColumns = [
+  [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/About" },
+    { label: "Media", href: "/" },
+    { label: "Contact us", href: "/Contact" },
+    { label: "What we do", href: "/WeDo" },
+  ],
+  [
+    { label: "Impact", href: "/" },
+    { label: "Get involved", href: "/#get-involved" },
+    { label: "Vision", href: "/Vision" },
+    { label: "Who we are", href: "/We" },
+  ],
+  [
+    { label: "Milestones", href: "/" },
+    { label: "Award & Recognition", href: "/" },
+    { label: "Our Partners", href: "/" },
+    { label: "Admin", href: "/Login" },
+  ],
+];
+
 export default function Footer() {
   return (
-    <div className="footer">
-      <div className="footer__content lg:gap-10 grid lg:grid-cols-4">
-        <div className="footer__item">
-          <Link href="/" passHref>
-            <h2>Home</h2>
-          </Link>
-          <Link href="/About" passHref>
-            <h2>About</h2>
-          </Link>
-          <Link href="/" passHref>
-            <h2>Media</h2>
-          </Link>
-          <Link href="/Contact" passHref>
-            <h2>Contact us</h2>
-          </Link>
-          <Link href="/WeDo" passHref>
-            <h2>What we do</h2>
-          </Link>
-        </div>
+    <footer className="footer">
+      <div className={`${containerClass} grid lg:grid-cols-4 lg:gap-10`}>
+        <nav aria-label="Footer" className="grid lg:col-span-3 lg:grid-cols-3 lg:gap-10">
+          {linkColumns.map((links, i) => (
+            <ul key={i} className="footer__item">
+              {links.map((link) => (
+                <li key={link.label}>
+                  <Link href={link.href}>
+                    <a>{link.label}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ))}
+        </nav>
 
-        <div className="footer__item">
-          <Link href="/" passHref>
-            <h2>Impact</h2>
-          </Link>
-          <Link href="/" passHref>
-            <h2>Get involved</h2>
-          </Link>
-          <Link href="/Vision" passHref>
-            <h2>Vission</h2>
-          </Link>
-          <Link href="/Mision" passHref> 
-            <h2>Mission</h2>
-          </Link>
-          <Link href="/We" passHref>
-            <h2>Who we are</h2>
-          </Link>
-        </div>
-        <div className="footer__item">
-          <Link href="/" passHref>
-            <h2>Milestones</h2>
-          </Link>
-          <Link href="/" passHref>
-            <h2>Award & Recogniton</h2>
-          </Link>
-          <Link href="/" passHref>
-            <h2>Our Partners</h2>
-          </Link>
-          <Link href="/Login" passHref>
-            <h2>Admin</h2>
-          </Link>
-        </div>
         <div id="footer__adress" className="footer__item">
           <div className="footer__logo">
-            <Image src='/asset/images/logo-2.png' height={14} width={20} alt=""/>
+            <Image src='/assets/images/logo-2.png' height={40} width={40} alt="" />
           </div>
-          <div className="flex footer__name">
-            <ApartmentIcon id="footer__icon" />
+          <address className="flex footer__name not-italic">
+            <ApartmentIcon id="footer__icon" aria-hidden="true" />
             <div>
-              <h2>Bolster foundation</h2>
-              <h3>Bolster Girls Campus</h3>
-
-              <h3>Veenalukkal,Parappur Kottakkal</h3>
-              <h3> Malappuram Kerala</h3>
-              <h3>India 676503</h3>
+              <p className="footer__org">Bolster foundation</p>
+              <p>Bolster Girls Campus</p>
+              <p>Veenalukkal, Parappur Kottakkal</p>
+              <p>Malappuram, Kerala</p>
+              <p>India 676503</p>
             </div>
+          </address>
+          <div className="flex footer__phone">
+            <CallIcon id="footer__icon" aria-hidden="true" />
+            <a href="tel:+913452348675">+91 345 234 8675</a>
           </div>
           <div className="flex footer__phone">
-            <CallIcon id="footer__icon" />
-            <p>+91 345 234 8675</p>
-          </div>
-          <div className="flex footer__phone">
-            <EmailIcon id="footer__icon" />
-            <p>bolsterfoundation@gmail.com </p>
+            <EmailIcon id="footer__icon" aria-hidden="true" />
+            <a href="mailto:bolsterfoundation@gmail.com">bolsterfoundation@gmail.com</a>
           </div>
           <div className="footer__input flex">
-            <input placeholder="Subscribe our newsletter" />
+            <input placeholder="Subscribe to our newsletter" aria-label="Email address for newsletter" />
             <div className="footer__arrow__div rounded-full">
               <ArrowForwardIcon />
             </div>
@@ -91,16 +80,18 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom">
-         <h4>All rights reserved. Developed by <a href="whatsapp://send?phone=+918606256402" data-action="share/whatsapp/share"   >
-              {/* <p style={{textDecoration:'underline',cursor:'pointer'}} className="ml-2"> */}
-                
-               <span style={{textDecoration:'underline',color:"#fff"}}>Booreact</span>
-                 
-               
-             {/* </p> */}
-  </a>
-         </h4>
+        <p className="text-gray-300">
+          All rights reserved. Powered by{" "}
+          <a
+            href="https://www.instagram.com/axonvex.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline"
+          >
+            Axonvex
+          </a>
+        </p>
       </div>
-    </div>
+    </footer>
   );
 }

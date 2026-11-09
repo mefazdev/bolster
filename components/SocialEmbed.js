@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { collection, orderBy, query, getDocs, limit } from "@firebase/firestore";
 import { db } from "../firebase";
 import useInstagramEmbeds from "../lib/useInstagramEmbeds";
+import SectionHeading from "./SectionHeading";
+import Button from "./Button";
+import { containerClass } from "./Container";
 
 export default function SocialEmbed() {
   const gridRef = useRef(null);
@@ -35,12 +37,10 @@ export default function SocialEmbed() {
   if (status === "error" || (status === "ready" && links.length === 0)) return null;
 
   return (
-    <section data-aos="fade-up" className="embed lg:pt-20 px-4 lg:px-0">
-      <div className="hm__blogs__head">
-        <h3>What&apos;s new</h3>
-      </div>
+    <section data-aos="fade-up" className={`${containerClass} py-12 lg:pt-20`}>
+      <SectionHeading id="whats-new">What&apos;s new</SectionHeading>
 
-      <div ref={gridRef} className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div ref={gridRef} className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {status === "loading"
           ? [0, 1, 2].map((i) => (
               <div
@@ -66,10 +66,8 @@ export default function SocialEmbed() {
             ))}
       </div>
 
-      <div className="flex">
-        <Link href="/Updates">
-          <a className="m-auto mt-8 bg-[#c9ca76] p-1 px-5 text-black transition hover:brightness-95">View More</a>
-        </Link>
+      <div className="mt-8 flex justify-center">
+        <Button href="/Updates">View More</Button>
       </div>
     </section>
   );

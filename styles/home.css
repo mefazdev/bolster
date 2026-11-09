@@ -6,17 +6,7 @@
 
 /* <<<<<<<HOME ABOUT >>>>>>>> */
 
-.home__about {
-  margin: auto;
-}
 
-.home__subhead {
-  background-color: rgb(201, 202, 118);
-
-  max-width: 100px;
-  padding: 5px;
-  font-family: "Poppins", sans-serif;
-}
 
 .home__about__img {
   height: 250px;
@@ -25,9 +15,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-}
-.home__about__content {
-  margin-top: 10px;
 }
 .home__about__content__right h3 {
   font-family: "Poppins", sans-serif;
@@ -45,20 +32,6 @@
   color: rgba(88, 85, 85, 0.918);
   font-family: "Poppins", sans-serif;
 }
-.home__about__content__right button {
-  width: 100%;
-  max-width: 100px;
-  padding: 3px;
-  color: rgb(29, 27, 27);
-  border-radius: 2px;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  margin-top: 14px;
-  background-color: rgb(201, 202, 118);
-}
-.home__about__content__right button:hover {
-  background-color: rgb(201, 202, 118);
-}
 .h__prgm {
   margin-top: 50px;
   font-family: "Poppins", sans-serif;
@@ -68,22 +41,8 @@
     no-repeat padding-box;
 }
 
-@media only screen and (min-width: 800px) {
-  .h__prgm__content {
-    max-width: 90%;
-  }
-}
 
-.h__prgm__content__subhead {
-  background-color: rgb(201, 202, 118);
-  max-width: 150px;
-  padding: 5px;
-  font-family: "Poppins", sans-serif;
-}
 
-.h__prgm__content {
-  padding: 20px;
-}
 .prgm__content__main__left {
   background-image: url("../public/assets/images/campus.jpg");
   min-height: 250px;
@@ -128,20 +87,6 @@
 .prgm__content__main__right a {
   margin: auto;
 }
-.prgm__content__main__right button {
-  width: 100%;
-  max-width: 100px;
-  padding: 5px;
-  color: rgb(29, 27, 27);
-  border-radius: 2px;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  background-color: rgb(201, 202, 118);
-  margin-top: 15px;
-}
-.prgm__content__main__right button:hover {
-  transform: scale(1.011);
-}
 .prgm__content__row {
   margin-top: 30px;
 }
@@ -176,32 +121,7 @@
     no-repeat padding-box;
 }
 
-@media only screen and (min-width: 800px) {
-  .hm__involve__contetn {
-    max-width: 87%;
-  }
-}
 
-.hm__involve__contetn {
-  margin: auto;
-}
-.hm__involve__head {
-  max-width: 200px;
-}
-.hm__involve__head {
-  background-color: rgb(201, 202, 118);
-  height: 35px;
-  display: flex;
-  align-items: center;
-}
-.hm__involve__head h3 {
-  font-family: "Poppins", sans-serif;
-
-  margin-left: 5px;
-}
-.hm__involve__row {
-  margin-top: 20px;
-}
 .hm__involve__box {
   background: transparent
     linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0%
@@ -504,27 +424,16 @@
     left: 3%;
   }
 
-  .home__about {
-    margin-top: 0px;
-    padding: 15px;
-  }
   .home__about__img {
     height: 200px;
 
     background-size: cover;
-  }
-  .home__about__content__right button {
-    margin: auto;
-    margin-top: 10px;
   }
   .h__prgm {
     padding-top: 0px;
     padding-bottom: 10px;
 
     margin-top: 20px;
-  }
-  .h__prgm__content {
-    padding: 15px;
   }
 
   .prgm__content__row__box {
@@ -538,11 +447,6 @@
     height: 200px;
   }
 
-  .prgm__content__main__right button {
-    margin: auto;
-    margin-top: 10px;
-    max-width: 100%;
-  }
   .prgm__content__main__right {
     padding-right: 0px;
   }
@@ -669,32 +573,9 @@
   }
 }
 
-.embed {
-  margin: auto;
-  margin-top: 50px;
-  padding-bottom: 50px;
-}
-@media only screen and (min-width: 800px) {
-  .embed {
-    max-width: 85%;
-  }
-}
 
-.embed__row {
-  margin-top: 20px;
-}
-.embed iframe {
-  height: 500px;
-  width: 90%;
-  margin: auto;
-}
 
-@media only screen and (max-width: 800px) {
-  .embed {
-    margin-top: 40px;
-    padding: 15px;
-  }
-}
+
 
 #modal {
   display: flex;
@@ -795,6 +676,21 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+/* Impact stats background. Normal scrolling by default: `background-attachment: fixed`
+   is ignored on iOS and forces a full repaint on every scroll frame on mobile/tablets. */
+.status-section {
+  background-image: url("../public/assets/images/scroll-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Parallax only on desktop with a mouse, and only if the user hasn't asked for reduced motion. */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .status-section {
+    background-attachment: fixed;
+  }
 }
 
 .status-bg {

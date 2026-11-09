@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
+import SectionHeading from "./SectionHeading";
+import { containerClass } from "./Container";
 
 export default function Testimonial() {
   const docs = [
@@ -192,54 +194,59 @@ the University of Stirling.`,
   ];
   return (
     <div data-aos="fade-up" className="py-10 md:py-16">
-      <div className="px-4 lg:px-0 lg:w-9/12 mx-auto">
-       <Carousel
-              autoPlay={true}
-              interval={4000}
-              //   duration={2000}
-              swipe={true}
-              indicators={true}
-              animation="fade"
-              stopAutoPlayOnHover={true}
-             className="ease-linear duration-200 transition-all "
-              
-            >
-              {docs.map((doc) => (
-          <div key={doc.name} className="lg:flex gap-10 items-center ">
-            <div className="relative h-[150px] w-[150px] md:h-[200px] md:w-[200px] mx-auto lg:min-h-[200px] lg:min-w-[200px] rounded-full overflow-hidden">
-              <Image
-                src={doc.image}
-                layout="fill"
-                className="object-cover rounded-full"
-              />
-            </div>
-            <div className="mt-6 lg:mt-0">
-              <div>
-                <h6 className="font-bold text-xl">{doc.name}</h6>
-                <p className=" text-gray-600">{doc.title}</p>
-                <p className="mt-3 italic">{doc.content}</p>
+      <div className={containerClass}>
+        <SectionHeading id="success-stories">Success stories</SectionHeading>
+        {/* Quote stays at a readable width, centred inside the shared container */}
+        <div className="mx-auto max-w-4xl">
+        <Carousel
+          autoPlay={true}
+          interval={4000}
+          //   duration={2000}
+          swipe={true}
+          indicators={true}
+          animation="fade"
+          stopAutoPlayOnHover={true}
+          className="ease-linear duration-200 transition-all "
+
+        >
+          {docs.map((doc) => (
+            <div key={doc.name} className="lg:flex gap-10 items-center ">
+              <div className="relative h-[150px] w-[150px] md:h-[200px] md:w-[200px] mx-auto lg:min-h-[200px] lg:min-w-[200px] rounded-full overflow-hidden">
+                <Image
+                  src={doc.image}
+                  alt={''}
+                  layout="fill"
+                  className="object-cover rounded-full"
+                />
               </div>
-              <div className="mt-6 flex flex-wrap items-center gap-4 ">
-                {doc?.logos?.map((logo) => (
-                  <div
-                    key={logo.src}
+              <div className="mt-6 lg:mt-0">
+                <div>
+                  <h6 className="font-bold text-xl">{doc.name}</h6>
+                  <p className=" text-gray-600">{doc.title}</p>
+                  <p className="mt-3 italic">{doc.content}</p>
+                </div>
+                <div className="mt-6 flex flex-wrap items-center gap-4 ">
+                  {doc?.logos?.map((logo) => (
+                    <div
+                      key={logo.src}
                     // className={`relative h-[${logo.height}px] w-[${logo.width}px]`}
-                  >
-                    <Image
-                      src={logo?.src}
-                      height={logo.height}
-                      width={logo.width}
-                      //   layout="fill"
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
+                    >
+                      <Image
+                        src={logo?.src}
+                        alt=""
+                        height={logo.height}
+                        width={logo.width}
+                        //   layout="fill"
+                        className="object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-            </Carousel>  
-       
+          ))}
+        </Carousel>
+        </div>
       </div>
     </div>
   );

@@ -4,13 +4,13 @@ import WorkIcon from "@mui/icons-material/Work";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import Link from "next/link";
+import SectionHeading from "./SectionHeading";
+import { containerClass } from "./Container";
 export default function Involve() {
   return (
-    <div data-aos="fade-up" className="hm__involve   pb-24">
-      <div className="hm__involve__contetn">
-        <div className="hm__involve__head">
-          <h3>Get involved</h3>
-        </div>
+    <div data-aos="fade-up" className="hm__involve pb-16 lg:pb-24">
+      <div className={containerClass}>
+        <SectionHeading id="get-involved">Get involved</SectionHeading>
         <div className="hm__involve__row gap-10 grid lg:grid-cols-4">
           <Link href="/Contact" passHref>
             <div className="hm__involve__box  shadow-xl hover:-translate-y-1 hover:scale-105 transition ease-linear duration-200 ">

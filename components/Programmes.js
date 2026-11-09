@@ -1,6 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import SectionHeading from "./SectionHeading";
+import Button from "./Button";
+import { containerClass } from "./Container";
 
 export default function Programmes() {
   // const docs = [
@@ -73,10 +75,8 @@ export default function Programmes() {
   ];
   return (
     <div className="h__prgm py-20">
-      <div className="h__prgm__content mx-auto">
-        <div className="h__prgm__content__subhead">
-          <h3>Our programmes</h3>
-        </div>
+      <div className={containerClass}>
+        <SectionHeading id="programmes">Our programmes</SectionHeading>
 
         <div data-aos="zoom-in"  className="prgm__content__main gap-3 lg:gap-5 grid lg:grid-cols-2">
           <div className="prgm__content__main__left">
@@ -120,9 +120,9 @@ export default function Programmes() {
               careers.
              
             </p>
-            <a href="https://www.bolstercampus.in/">
-              <button>Learn More</button>
-            </a>
+            <div className="mt-4 flex justify-center lg:justify-start">
+              <Button href="https://www.bolstercampus.in/">Learn More</Button>
+            </div>
           </div>
         </div>
         <div className="mt-6 lg:mt-20 gap-5 grid lg:grid-cols-3">
@@ -154,7 +154,7 @@ export default function Programmes() {
             return (
               <div data-aos="fade-up" 
                 key={i}
-                className="p-3 lg:p-4 bg-white   m-auto lg:w-11/12   shadow-lg rounded-md group"
+                className="w-full p-3 lg:p-4 bg-white shadow-lg rounded-md group"
               >
                 <div
                   className="w-full h-60 rounded-md relative"
@@ -172,11 +172,12 @@ export default function Programmes() {
                         {d.description}{" "}
                       </p>
 
-                      <Link href={d.link} passHref>
-                        <button className="   bg-[#C9CA76] p-1 px-3 rounded   text-sm w-fit mt-8 transition ease-in  duration-300   group-hover:-translate-y-6">
-                          More Info
-                        </button>
-                      </Link>
+                      <Button
+                        href={d.link}
+                        className="mt-8 duration-300 ease-in group-hover:-translate-y-6"
+                      >
+                        More Info
+                      </Button>
                     </div>
                   </div>
                 </div>

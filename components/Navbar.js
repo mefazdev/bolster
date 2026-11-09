@@ -276,8 +276,9 @@ export default function Navbar() {
               <h6>Contact us</h6>
             </Link>
             <a
-              href="whatsapp://send?phone=+919605407078"
-              data-action="share/whatsapp/share"
+              href="https://wa.me/919605407078"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <button>DONATE</button>
             </a>

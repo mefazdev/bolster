@@ -4,11 +4,12 @@ import CountUp from "react-countup";
 import Carousel from "react-multi-carousel";
 import VisibilitySensor from "react-visibility-sensor";
 import "react-multi-carousel/lib/styles.css";
+import { containerClass } from "./Container";
 export default function Status() {
-  const [didViewCountUp, setState] = useState(false);
+  const [didViewCountUp, setDidViewCountUp] = useState(false);
   const onVisibilityChange = (isVisible) => {
     if (isVisible) {
-      setState({ didViewCountUp: true });
+      setDidViewCountUp(true);
     }
   };
 
@@ -99,16 +100,10 @@ export default function Status() {
   return (
     <div>
       <div 
-        className="relative w-full  overflow-auto bg-cover bg-center  py-10 lg:py-16 "
-        style={{
-          backgroundImage: 'url("/assets/images/scroll-2.jpg")',
-
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
+        className="status-section relative w-full overflow-hidden py-10 lg:py-16"
       >
         <div className="status-bg absolute inset-0 z-10  bg-opacity-90"></div>
-<div data-aos="fade-up" className="relative z-50"><div  className="px-4 lg:px-0 lg:w-11/12   mx-auto  relative opacity-100 z-20 ">
+<div data-aos="fade-up" className="relative z-50"><div className={`${containerClass} relative z-20`}>
           <h5 className="text-xl md:text-4xl font-semibold text-white text-center shadow shadow-gray-200 rounded-full w-fit mx-auto p-2 md:p-4 px-3 lg:px-6">
             Bolster Impact: Dreams to Destinations
           </h5>
@@ -141,7 +136,7 @@ export default function Status() {
           </div>
         </div>
 
-        <div   className="mt-20 z-20 relative lg:w-11/12 mx-auto px-4 lg:px-0">
+        <div className={`${containerClass} relative z-20 mt-20`}>
           <Carousel
             swipeable={true}
             draggable={true}

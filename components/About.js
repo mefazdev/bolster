@@ -4,7 +4,9 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
-import Link from "next/link";
+import SectionHeading from "./SectionHeading";
+import Button from "./Button";
+import { containerClass } from "./Container";
 export default function About() {
   return (
     <div>
@@ -28,12 +30,8 @@ export default function About() {
           </div>
         </a>
       </div>
-      <div data-aos="fade-up"  className="home__about lg:w-11/12 mx-auto py-24">
-        <div className="home__about__head">
-          <div className="home__subhead">
-            <h3>About us</h3>
-          </div>
-        </div>
+      <div data-aos="fade-up"  className={`${containerClass} py-16 lg:py-24`}>
+        <SectionHeading id="about">About us</SectionHeading>
         <div className="home__about__content grid grid-cols-1 gap-5 lg:gap-10 lg:grid-cols-3">
           <div className="home__about__img"></div>
           <div className="home__about__content__right lg:col-span-2 lg:mt-4">
@@ -46,9 +44,9 @@ export default function About() {
               We open doors to new opportunities through career mentoring, counseling, motivation, and training in modern languages and information & communication technology. Beyond individual growth, we collaborate with local educational institutions to reform curricula, teaching methods, and infrastructure, ensuring a holistic learning environment.
  
             </p>
-            <Link href="/About" passHref>
-              <button>Read More</button>
-            </Link>
+            <div className="mt-4 flex justify-center lg:justify-start">
+              <Button href="/About">Read More</Button>
+            </div>
           </div>
         </div>
       </div>

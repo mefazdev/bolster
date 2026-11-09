@@ -106,7 +106,7 @@ export default function Blogs({ posts }) {
           <h1 className="blog-heading mt-5 text-4xl font-bold tracking-tight text-stone-900 sm:text-6xl">
             Student{" "}
             <span className="relative whitespace-nowrap text-orange-600">
-              Voices
+              Blogs
               <svg aria-hidden="true" viewBox="0 0 200 12" className="absolute -bottom-2 left-0 h-3 w-full text-[rgb(201,202,118)]" preserveAspectRatio="none">
                 <path d="M2 9 Q 50 2 100 7 T 198 5" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
               </svg>

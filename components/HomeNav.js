@@ -5,30 +5,43 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Modal from "@mui/material/Modal";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import CloseIcon from '@mui/icons-material/Close';
+import { containerClass } from "./Container";
 export default function HomeNav() {
   const [open, setOpen] = useState(false);
   const [subMenu, setSubMenu] = useState("");
-  //   const { onClose, selectedValue, openAbout } = props;
-
-  const divRef = useRef(null);
-
-  const handleClickOutside = (event) => {
-    if (divRef.current && !divRef.current.contains(event.target)) {
-      setSubMenu("");
-      // Call your function here
-    }
-  };
+  // Wraps the whole menu list; a tap outside it closes any open submenu.
+  const menuRef = useRef(null);
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+    if (!open) return;
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setSubMenu("");
+      }
     };
-  }, []);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [open]);
+
+  const closeMenu = () => {
+    setOpen(false);
+    setSubMenu("");
+  };
+
+  // Tap toggles a submenu (works on touch); on desktop hover still opens it too.
+  const toggleSubMenu = (name) =>
+    setSubMenu((current) => (current === name ? "" : name));
+
+  // On phones the submenu expands inline under its item; on lg it's a hover dropdown.
+  const subMenuClass = (name) =>
+    `${subMenu === name ? "grid lg:hidden" : "hidden"} lg:group-hover:grid mt-2 lg:mt-0 static lg:absolute lg:top-12 lg:left-20 bg-gray-100 z-50 text-black py-2 lg:py-4 rounded gap-1 lg:gap-2`;
+
+  const arrowClass = (name) =>
+    `transition-transform duration-200 ${subMenu === name ? "rotate-90" : ""}`;
 
   return (
     <div className="absolute w-full z-50">
-      <div className="flex items-center justify-between px-2 pr-4 lg:pr-0 lg:px-0 lg:w-11/12 mx-auto pt-8">
+      <div className={`${containerClass} flex items-center justify-between pt-8`}>
         <Link href="/" passHref>
           <div className="relative     h-[70px] w-[160px] lg:h-[70px] lg:w-[250px]">
             <Image
@@ -50,15 +63,16 @@ export default function HomeNav() {
       <Modal
         id="modal"
         open={open}
+        onClose={closeMenu}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <div  className="mx-auto  outline-none bg-gray-800 h-screen w-full pt-32 relative">
        
           <div className="lg:w-8/12 mx-auto lg:text-lg relative px-4 lg:px-0">
-          <CloseIcon className="absolute   right-6 lg:right-0 -top-10 text-white cursor-pointer text-3xl " onClick={()=>setOpen(false)}/>
-       
-         <div className="grid gap-2 mx-auto ">
+          <CloseIcon className="absolute   right-6 lg:right-0 -top-10 text-white cursor-pointer text-3xl " onClick={closeMenu}/>
+
+         <div ref={menuRef} className="grid gap-2 mx-auto ">
          <Link href={"/"} passHref >
               <div className="   bg-gray-600 rounded cursor-pointer   text-cente p-2 text-white hover:bg-white hover:text-gray-800 ">
                 Home
@@ -69,16 +83,16 @@ export default function HomeNav() {
               className="relative group bg-gray-600 rounded cursor-pointer  text-cente p-2 text-white hover:bg-white hover:text-gray-800 "
             >
               <button
-               ref={divRef}
-                // onClick={() => setSubMenu("about")}
-                className="flex items-center "
+                type="button"
+                onClick={() => toggleSubMenu("about")}
+                aria-expanded={subMenu === "about"}
+                className="flex items-center w-full text-left"
               >
-                {" "}
                 About
-                <KeyboardArrowRightIcon />
+                <KeyboardArrowRightIcon className={arrowClass("about")} />
               </button>
-           
-                <div className="bg-gray-100 z-50  hidden group-hover:grid   text-black py-4  rounded absolute top-12 left-[10%]  gap-2">
+
+                <div className={subMenuClass("about")}>
                   <Link href={"/About"} passHref>
                     <div 
                     className="px-4 py-2 cursor-pointer hover:bg-gray-800 hover:text-white"
@@ -101,7 +115,7 @@ export default function HomeNav() {
                       Milestones
                     </div>
                   </Link>{" "}
-                  <Link href="//Testimonial" passHref>
+                  <Link href="/Testimonial" passHref>
                     <div className="px-4 py-2 cursor-pointer hover:bg-gray-800 hover:text-white">
                       Testimonials
                     </div>
@@ -120,14 +134,16 @@ export default function HomeNav() {
               className="relative group bg-gray-600 rounded cursor-pointer  text-cente p-2 text-white hover:bg-white hover:text-gray-800 "
             >
               <button
-                onClick={() => setSubMenu("weDo")}
-                className="flex items-center "
+                type="button"
+                onClick={() => toggleSubMenu("weDo")}
+                aria-expanded={subMenu === "weDo"}
+                className="flex items-center w-full text-left"
               >
                 What we do
-                <KeyboardArrowRightIcon />
+                <KeyboardArrowRightIcon className={arrowClass("weDo")} />
               </button>
-           
-                <div className="bg-gray-100  hidden group-hover:grid   z-50 text-black py-4  rounded absolute top-9 lg:top-12 left-20  gap-2">
+
+                <div className={subMenuClass("weDo")}>
                   <Link href="/Programmes" passHref>
                     <div className="px-4 py-2 cursor-pointer hover:bg-gray-800 hover:text-white">
                       Programmes
@@ -147,18 +163,19 @@ export default function HomeNav() {
    
             </div>
             <div
-              ref={divRef}
               className="relative group bg-gray-600 rounded cursor-pointer  text-cente p-2 text-white hover:bg-white hover:text-gray-800 "
             >
               <button
-                onClick={() => setSubMenu("resources")}
-                className="flex items-center "
+                type="button"
+                onClick={() => toggleSubMenu("resources")}
+                aria-expanded={subMenu === "resources"}
+                className="flex items-center w-full text-left"
               >
                 Resources
-                <KeyboardArrowRightIcon />
+                <KeyboardArrowRightIcon className={arrowClass("resources")} />
               </button>
- 
-                <div className="bg-gray-10 hidden bg-white group-hover:grid z-50 text-black py-4  rounded absolute top-9 lg:top-12 left-20  gap-2">
+
+                <div className={subMenuClass("resources")}>
                   <a href="https://www.youtube.com/c/BolsterFoundation">
                     <div className="px-4 py-2 cursor-pointer hover:bg-gray-800 hover:text-white">
                       Youtube
@@ -198,8 +215,9 @@ export default function HomeNav() {
               </div>
             </Link>
             <a
-              href="whatsapp://send?phone=+919605407078"
-              data-action="share/whatsapp/share"
+              href="https://wa.me/919605407078"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <div className=" border-b border-gray-600 cursor-pointer hover:scale-105 ease-linear duration-200 transition   text-center bg-white p-2 text-gray-800 rounded-full hover:bg-white hover:text-gray-800 ">
                 DONATE
